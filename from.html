@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/from.css">
+</head>
+
+<body>
+   
+    <header class="main-header">
+        <div class="logo">
+            <a href="#"><img src="image/f2.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <a href="about.html">關於我們</a>
+            <a href="activity.html">課程活動</a>
+            <a href="teachers.html">師資介紹</a>
+            <a href="application.html">報名資訊</a>
+            <a href="logoin.html">會員登入</a>
+        </nav>
+    </header>
+
+
+
+
+
+    
+
+    <form>
+
+        <div class="form-group">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group sex">
+            <label>性別:</label>
+            <input type="radio" id="male" name="gender" value="男" required>
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="女" required>
+            <label for="female">女</label>
+            <input type="radio" id="nomean" name="gender" value="不公開" required>
+            <label for="nomean">不公開</label>
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">生日:</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">地址:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="verification">驗證碼:</label>
+            <input type="text" id="verification" name="verification" required>
+            <img src="captcha.png" alt="驗證碼">
+        </div>
+
+        <button type="submit">提交</button>
+    </form>
+
+
+
+    <footer class="footer-group">
+        <ul class="nav-bottom">
+            <li class="nav-item">
+                <a href="#" class="nav-link">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">常見問題</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">相關報導</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">社群</a>
+            </li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>

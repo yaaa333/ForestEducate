@@ -6,10 +6,11 @@
 }
 
 html {
-    background-image: url(../image/bbg.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
+    background-image: url(../image/backg.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-position: top;
+    background-attachment: fixed; */
+    
 
 }
 
@@ -31,10 +32,13 @@ header {
 }
 
 a {
+    font-family: 'Noto Sans TC', sans-serif;
     text-decoration: none;
     color: #75523A;
 }
-
+h2,h3{
+    font-family: 'BIZ UDPMincho', serif;
+}
 .logo {
     width: 160px;
     height: 250px;
@@ -107,16 +111,19 @@ nav a {
 .slogan{
     position:absolute;
     top:300px;
+      
 }
 .slogan p{
     width:400px;
-    height:50px;
+    height:40px;
     margin: 10px;
     font-size:36px;
     padding:10px;
     text-align:center;
     background-color:#fff8;
     border-radius:50px;
+    color:#75523a;
+    font-family: 'BIZ UDPMincho', serif;
 }
 .slogan span{
     width:300px;
@@ -126,11 +133,13 @@ nav a {
     background-color:rgba(255, 255, 255, 0.80);
     align-items:center;
     border-radius:50px;
+    color:#75523a;
+    font-family: 'Noto Sans TC', sans-serif;
+
 }
 
 .card-list {
     padding-top: 150px;
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -140,15 +149,13 @@ nav a {
 .card-list .card {
     width: 1180px;
     display: flex;
-    border: 1px solid #aaa;
     box-sizing: border-box;
     margin: 10px;
-
+    
 }
 
 .cardbt {
     flex-direction: row-reverse;
-    background-color: #fa0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -167,7 +174,6 @@ nav a {
     width: 80%;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #23b35f;
     display: flex;
     justify-content: center;
 }
@@ -177,22 +183,23 @@ nav a {
     box-sizing: border-box;
     padding: 10px;
     writing-mode: vertical-lr;
+    font-family: 'Noto Sans TC', sans-serif;  
 
 }
 .btn-m{
     height: 400px;
     display: flex;
     justify-content: end;
-
+    
 }
 .buttom-more {
-    
+    font-family: 'BIZ UDPMincho', serif;
     height: 50px;
     width: 30px;
 }
 
 .txt-new h3 {
-    color: red;
+    color: #BC8660;
     font-size: 42px;
     padding-left: 50px;
     padding-top: 30px;
@@ -207,12 +214,14 @@ nav a {
 .txt-new a {
     width: 50px;
     height: 80px;
-    border: 1px solid #75523A;
+    border:1px solid #BC8660;
     border-radius: 50px;
     display: flex;
     align-items:center ;
     justify-content: center;
 }
+
+
 
 
 @media screen and (max-width:768px) {
@@ -240,13 +249,10 @@ nav a {
     margin: 100px;
     display: flex;
     justify-content: center;
-    border: 1px solid rgb(0, 58, 128);
 
 }
 
-.bird {
-    border: 1px solid green;
-}
+
 
 .bird img {
     width: 250px;
@@ -255,7 +261,6 @@ nav a {
 .tinitalk {
     display: flex;
     justify-content: center;
-    border: 1px solid green;
 }
 
 .tinitalk img {}
@@ -263,12 +268,10 @@ nav a {
 .egg {
     display: flex;
     align-content: center;
-    border: 1px solid #ff0;
     margin: 20px;
 }
 
 .egg img {
-    border: 1px solid black;
     margin: 0 20px;
 }
 
@@ -281,15 +284,12 @@ nav a {
     margin: 100px 300px;
     display: flex;
     position: relative;
-    border: 1px solid #f0a;
     justify-content: center;
 }
 
 .pic-recom {}
 
 .txt-recom {
-
-    border: 1px solid pink;
     width: 570px;
     height: 540px;
     display: flex;
@@ -297,6 +297,7 @@ nav a {
     justify-content: center;
     flex-direction: column;
     background: url(../image/bggreen.svg) no-repeat;
+    font-family: 'Noto Sans TC', sans-serif;
 
 }
 
@@ -318,7 +319,7 @@ nav a {
     background: url(../image/footer2.png) no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     list-style: none;
    
@@ -328,9 +329,9 @@ nav a {
 .nav-item {}
 
 .nav-item a {
+   
     text-decoration: none;
     margin: 10px;
-    border: 1px solid blue;
 }
 
 
@@ -363,6 +364,8 @@ nav a {
     font-size: 32px;
     width: 70px;
     margin: auto;
+    font-family: 'Noto Sans TC', sans-serif;
+
 }
 
 .bt-nt {
@@ -395,13 +398,14 @@ nav a {
     justify-content: center;
     margin-top: 50px;
     margin-left: 250px;
+    font-family: 'Noto Sans TC', sans-serif;
+
 
 }
 
 .white {
     width: 100px;
     height: 100px;
-    border: 1px solid #411397;
     display: flex;
     justify-content: center;
 
@@ -415,7 +419,6 @@ nav a {
 
 .horizon{
     margin: 50px;
-    border: 1px solid #411397;
     width: 300px;
     height: 0.1px;
 }

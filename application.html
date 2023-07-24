@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/application.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,25 +19,43 @@
                 <a href="#"><img src="image/f2.svg" alt="logo"></a>
             </div>
             <nav>
-                <a href="#">關於我們</a>
-                <a href="#">課程活動</a>
-                <a href="#">師資介紹</a>
-                <a href="#">報名資訊</a>
-                <a href="#">會員登入</a>
+                <a href="about.html">關於我們</a>
+                <a href="activity.html">課程活動</a>
+                <a href="teachers.html">師資介紹</a>
+                <a href="application.html">報名資訊</a>
+                <a href="logoin.html">會員登入</a>
             </nav>
         </div>
         <div class="slider">
             <div class="slider-container">
                 <div class="big-image">
-                    <img src="image/camera.jpg" alt="大圖">
+                    <img id="large" src="image/camera.jpg" alt="大圖">
                 </div>
-                <div class="small-images">
-                    <img src="image/camera.jpg" alt="小圖">
-                    <img src="image/camera.jpg" alt="小圖">
-                    <img src="image/camera.jpg" alt="小圖">
+                <div id="smallPanel" class="small-images">
+                    <img src="image/starsky2.jpg" alt="小圖">
+                    <img src="image/owl2.jpg" alt="小圖">
+                    <img src="image/forest2.jpg" alt="小圖">
                     <img src="image/camera.jpg" alt="小圖">
                 </div>
             </div>
+
+            <script>
+                function showLarge(e){
+                    
+                      document.getElementById("large").src = e.target.src;
+                }
+                
+                function init(){
+                    
+                    let smalls = document.querySelectorAll("#smallPanel img");
+                    for(let i=0; i<smalls.length; i++){
+                        smalls[i].onclick = showLarge;
+                    }
+                }
+                
+                window.addEventListener("load", init, false);
+                </script>
+
 
             <div class="outdoor">
                 <div class="container">
@@ -41,20 +63,20 @@
                         <h1>森森夏日浪漫星空</h1>
                         <div class="icon-group">
                             <div class="oneday">
-                                <img src="image/clock-icon.svg">
+                                <img src="image/clock-icon 1.png">
                                 <p>一天一夜</p>
                             </div>
                             <div class="oneday">
-                                <img src="image/location-icon.svg">
+                                <img src="image/location-icon 1.png">
                                 <p>台中</p>
                             </div>
                             <div class="oneday">
-                                <img src="image/user-icon.svg">
+                                <img src="image/user-icon 1.png">
                                 <p>成人/兒童</p>
                             </div>
                         </div>
                     </div>
-                    <div class="explain starplain">
+                    <div id="starplain" class="explain starplain">
                         <h2>活動說明</h2>
                         <p>自古以來，人類仰望星空，<br>
                             古人從星星窺測未來，航海家從星星尋找方向，<br>
@@ -82,28 +104,28 @@
                         <div class="button">
                             <p>TWD2,500/人</p>
                             <span>領取優惠卷</span>
-                            <a href="#">報名</a>
+                            <a href="manners.html">我要報名</a>
                         </div>
                     </div>
                     <div class="explain list-bar">
                         <ul>
                             <li class="line-short">
-                                <a href="#">活動說明</a>
+                                <a href="application.html#starplain">活動說明</a>
                             </li>
                             <li class="line-short">
-                                <a href="#">行程介紹</a>
+                                <a href="application.html#firstday">行程介紹</a>
                             </li>
                             <li class="line-short">
-                                <a href="#">集合地點</a>
+                                <a href="application.html#location">集合地點</a>
                             </li>
                             <li class="line-short">
-                                <a href="#">活動地點</a>
+                                <a href="application.html#actloca">活動地點</a>
                             </li>
                             <li class="line-short">
-                                <a href="#">取消及注意事項</a>
+                                <a href="application.html#cancel">取消及注意事項</a>
                             </li>
                             <li class="line-short">
-                                <a href="#">學員評價</a>
+                                <a href="application.html#location">學員評價</a>
                             </li>
                         </ul>
                     </div>
@@ -115,7 +137,7 @@
             <table>
                 <tr>
                     <th>
-                        <h2>第一天行程</h2>
+                        <h2 id="firstday">第一天行程</h2>
                         <ul class="info-ul">
 
                             <li class="spot">
@@ -183,21 +205,21 @@
                             </li>
 
                         </ul>
-                        <div class="location">
+                        <div id="location" class="location">
                             <h2>集合地點</h2>
                             <div class="location-card">
                                 <p>八仙山國家森林遊樂區遊客中心一樓<br>
                                     地址:臺灣臺中市和平區東關路一段200之8號</p>
                             </div>
                         </div>
-                        <div class="location">
+                        <div id="actloca" class="location">
                             <h2>活動地點</h2>
                             <div class="location-card">
                                 <p>八仙山國家森林遊樂區<br>
                                     地址:臺灣臺中市和平區東關路一段200之8號</p>
                             </div>
                         </div>
-                        <div class="location">
+                        <div id="cancel" class="location">
                             <h2>取消及注意事項</h2>
                             <div class="caution">
                                 <ul class="caution-card">
@@ -206,11 +228,11 @@
                                         參加視同同意拍攝照片。</li>
                                     <li>★如臨時有事，無法參與活動，需要退費，
                                         請見下方說明：</li>
-                                    <li>●6月17日-24日申請取消參加：
+                                    <li>(1)6月17日-24日申請取消參加：
                                         不退費，可找有意願的朋友更換，
                                         最晚須於活動前3日來電或來信告知。</li>
                                     <li>
-                                        ●因不可抗力因素需申請取消參加：
+                                        (2)因不可抗力因素需申請取消參加：
                                         如遇天災或事變等不可抗力之因素
                                         (如重大傳染疾病等)，
                                         向中心提出取消參加，經中心判定，
@@ -219,20 +241,20 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="location">
+                        <div id="location" class="location">
                             <h2>學員評價</h2>
                             <div class="userline">
                                 <img class="usergirl" src="image/girl.jpg">
                                 <p>Tina</p>
                                 <p>2023/1/2</p>
-                            </div>  
+                            </div>
                             <div class="userline fivestar">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
-                            </div> 
+                            </div>
                             <div class="caution score">
                                 <div class="caution-card">
                                     <p>從以前就很想體驗看看用天文望遠鏡觀星，
@@ -249,14 +271,14 @@
                                 <img class="usergirl" src="image/bunny.jpg">
                                 <p>Tina</p>
                                 <p>2023/1/2</p>
-                            </div>  
+                            </div>
                             <div class="userline fivestar">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
                                 <img class="staricon" src="image/star-icon.svg">
-                            </div> 
+                            </div>
                             <div class="caution score">
                                 <div class="caution-card">
                                     <p>當天剛好塞車，有晚到一點點。但老師還是
