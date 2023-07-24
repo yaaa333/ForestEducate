@@ -1,0 +1,421 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    background-image: url(../image/bbg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+
+}
+
+
+header {
+    width: 100%;
+
+}
+
+.main-header {
+    box-sizing: border-box;
+    margin: 40px 0px 50px 0px;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #75523A;
+}
+
+.logo {
+    width: 160px;
+    height: 250px;
+
+
+}
+
+.logo img {
+    width: 100%;
+    display: inline-block;
+    margin: 80px 0;
+}
+
+nav {
+    display: block;
+    margin: 0px 20px;
+    width: 110px;
+}
+
+nav a {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+}
+
+.only {
+
+    position: fixed;
+    display: flex;
+    right: 250px;
+    top: 250px;
+    width: 80px;
+    height: 70px;
+}
+
+.thrle {
+    position: fixed;
+    display: flex;
+    width: 140px;
+    height: 140px;
+    left: 200px;
+    bottom: 450px;
+
+}
+
+.homepage-pic {
+    width: 100%;
+    position: relative;
+}
+
+.dl {
+    position: absolute;
+    right: -60px;
+    bottom: 30px;
+}
+
+.tl {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sl {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+
+.slogan{
+    position:absolute;
+    top:300px;
+}
+.slogan p{
+    width:400px;
+    height:50px;
+    margin: 10px;
+    font-size:36px;
+    padding:10px;
+    text-align:center;
+    background-color:#fff8;
+    border-radius:50px;
+}
+.slogan span{
+    width:300px;
+    height:30px;
+    font-size:16px;
+    display:flex;
+    background-color:rgba(255, 255, 255, 0.80);
+    align-items:center;
+    border-radius:50px;
+}
+
+.card-list {
+    padding-top: 150px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card-list .card {
+    width: 1180px;
+    display: flex;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    margin: 10px;
+
+}
+
+.cardbt {
+    flex-direction: row-reverse;
+    background-color: #fa0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
+.card .pic img {
+    width: 100%;
+    vertical-align: top;
+   
+
+}
+
+.card .pic {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #23b35f;
+    display: flex;
+    justify-content: center;
+}
+
+.card .txt-new {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    writing-mode: vertical-lr;
+
+}
+.btn-m{
+    height: 400px;
+    display: flex;
+    justify-content: end;
+
+}
+.buttom-more {
+    
+    height: 50px;
+    width: 30px;
+}
+
+.txt-new h3 {
+    color: red;
+    font-size: 42px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.txt-new p {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.txt-new a {
+    width: 50px;
+    height: 80px;
+    border: 1px solid #75523A;
+    border-radius: 50px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .card-list {
+        max-width: 1200px;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .card .pic,
+    .card .txt {
+        width: 100%;
+    }
+}
+
+.footer-group {}
+
+.bird-group {
+    height: 120px;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(0, 58, 128);
+
+}
+
+.bird {
+    border: 1px solid green;
+}
+
+.bird img {
+    width: 250px;
+}
+
+.tinitalk {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+}
+
+.tinitalk img {}
+
+.egg {
+    display: flex;
+    align-content: center;
+    border: 1px solid #ff0;
+    margin: 20px;
+}
+
+.egg img {
+    border: 1px solid black;
+    margin: 0 20px;
+}
+
+.egg a {
+    display: flex;
+    align-content: center;
+}
+
+.recommend {
+    margin: 100px 300px;
+    display: flex;
+    position: relative;
+    border: 1px solid #f0a;
+    justify-content: center;
+}
+
+.pic-recom {}
+
+.txt-recom {
+
+    border: 1px solid pink;
+    width: 570px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../image/bggreen.svg) no-repeat;
+
+}
+
+.footer-group {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.birdh {
+    position: absolute;
+    left: 500px;
+    top: -50px;
+}
+
+.nav-bottom {
+    width: 100%;
+    height: 330px;
+    background: url(../image/footer2.png) no-repeat;
+    display: flex;
+    /* padding-top: 0px ; */
+   align-items: end;
+    justify-content: center;
+    list-style: none;
+    background-position: center 0;
+    
+}
+
+.nav-item {}
+
+.nav-item a {
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid blue;
+   
+}
+
+
+.edntlife-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.bt-ed {
+    margin: 50px;
+    width: 200px;
+    position: relative;
+
+}
+
+.bt-ed img {
+    display: flex;
+
+}
+
+.bt-txt {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    color: #fff;
+    font-size: 32px;
+    width: 70px;
+    margin: auto;
+}
+
+.bt-nt {
+    margin: 50px;
+    width: 200px;
+    position: relative;
+}
+
+.bt-nt img {}
+
+.bt-life {
+    margin: 50px;
+    width: 200px;
+    position: relative;
+}
+
+.bt-life img {}
+
+.decor-x {
+    margin: 50px;
+    display: flex;
+    align-content: center;
+}
+
+.decor-x img {}
+
+.line-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 250px;
+
+}
+
+.white {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #411397;
+    display: flex;
+    justify-content: center;
+
+}
+
+.white p {
+    width: 50px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.horizon{
+    margin: 50px;
+    border: 1px solid #411397;
+    width: 300px;
+    height: 0.1px;
+}

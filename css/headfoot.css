@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html{
+    background-image: url(../image/bbg.jpg) ;   
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+ 
+}
+
+
+header{
+    width: 100%;
+   
+}
+.main-header {  
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 40px 0px 50px 0px;
+    display: inline-block;
+    position: relative;  
+}
+
+a {
+    text-decoration: none;
+    color: #75523A;
+}
+.logo{
+    width: 160px;
+    height: 250px;
+}
+.logo img {
+    width: 100%;
+    display: inline-block;
+    margin: 80px 0;
+}
+
+nav {
+    display: block;
+    margin: 0px 20px ;
+    width: 110px;
+}
+
+nav a {
+    display: flex;
+    padding: 8px 20px;
+    justify-content:center;
+}
+
+
+.footer-group {}
+
+.bird-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.bird {}
+
+.bird img {}
+
+.tinitalk {
+    display: flex;
+    align-content: center;
+    border:1px solid green;
+}
+
+.tinitalk img {}
+
+.egg {
+    display: flex;
+    align-content: center;
+    border:1px solid #ff0;
+    margin: 20px;
+}
+
+.egg img {
+    border: 1px solid black;
+    margin: 0 20px;
+}
+
+.egg a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.recommend {
+    margin: 100px 300px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border:1px solid #f0a;
+    justify-content: center;
+}
+
+.pic-recom {}
+
+.txt-recom {
+    position: absolute;
+    border: 1px solid pink;
+    bottom: 210px;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-group {}
+
+.nav-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-item {}
+
+.nav-item a {
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid blue;
+}
+
+
+.edntlife-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.bt-ed {
+    margin: 50px;
+    width: 200px;
+    border: 1px solid red;
+    position: relative;
+
+}
+
+.bt-ed img {
+    display: flex;
+
+}
+
+.bt-txt {
+    text-align: center;
+    border: 1px solid #fa0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    padding: 10px;
+    color: #fff;
+}
+
+
+.bt-nt {
+    margin: 50px;
+    width: 200px;
+    position: relative;
+}
+
+.bt-nt img {}
+
+.bt-life {
+    margin: 50px;
+    width: 200px;
+    position: relative;
+}
+
+.bt-life img {}
+
+.decor-x {
+    margin: 50px;
+    display: flex;
+    align-content: center;
+}
+
+.decor-x img {}
+
+.line-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 250px;
+
+}
+
+.white {
+    width: 100px;
+    height: 100px;
+    background-color: #411397;
+    display: flex;
+    justify-content: center;
+}
+
+.hr1 {
+    margin: 50px;
+    border: 1px solid #411397;
+    width: 300px;
+    height: 0.1px;
+
+
+}
