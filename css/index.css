@@ -218,7 +218,8 @@
 .egg {
     display: flex;
     align-content: center;
-    margin: 20px;border: :1px solid red;
+    margin: 20px;
+    border:1px solid red;
 }
 
 .egg img {
