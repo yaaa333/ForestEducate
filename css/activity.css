@@ -56,6 +56,7 @@ a {
 .hashtag-group {
     display: flex;
     justify-content: center;
+    margin-top:20px;
 }
 
 .hashtag-group a {
@@ -85,16 +86,25 @@ a {
     margin: 30px;
 }
 
-.list .card:nth-child(2n) {
+.list .card:nth-child(2) {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
 }
 
-.list .card:nth-child(2n) .txt {
-    margin: 0 10px 0 20px;
+.list .card:nth-child(2) .txt {
+    margin: 0 10px 0 -20px;
+  
 }
+.list .card:nth-child(2) .button {
+    display:inline-block;
+}
+
+
+.owl:nth-child(2) h2 {
+       top:70%;
+      }
 
 .card {
     width: 100%;
@@ -103,20 +113,39 @@ a {
     justify-content: center;
 }
 
-.card .pic {
+.pic-group {
     width: 40%;
+    height:340px;
+    position: relative;
+}
+
+.pic-title h2{
+    font-family: 'BIZ UDPMincho', serif;
+    font-size:32px;
+    left: 0;
+    right: 0;
+    top: 60%; 
+    padding: 10px;
+    line-height:70px;
+    position: absolute;
+    text-align:center;
+    color: #4E4B4B;;
+    background-color: #fff8;
 }
 
 .card .pic img {
     width: 100%;
     border-radius: 30px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   
+    
 }
 
 .card .txt {
     box-sizing: border-box;
     padding-left: 20px;
     font-size: 16px;
+    
 }
 
 .button {
