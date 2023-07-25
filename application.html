@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/application.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
-    <header class="main-header">
-        <div>
+    <div class="main">
+        <header>
             <div class="logo">
                 <a href="index.html"><img src="image/f2.svg" alt="logo"></a>
             </div>
@@ -25,11 +21,11 @@
                 <a href="application.html">報名資訊</a>
                 <a href="logoin.html">會員登入</a>
             </nav>
-        </div>
+        </header>
         <div class="slider">
             <div class="slider-container">
                 <div class="big-image">
-                    <img id="large" src="image/camera.jpg" alt="大圖">
+                    <img id="large" src="image/starsky2.jpg" alt="大圖">
                 </div>
                 <div id="smallPanel" class="small-images">
                     <img src="image/starsky2.jpg" alt="小圖">
@@ -176,7 +172,7 @@
 
                             <li class="spot">
                                 <div class="time-info-title">
-                                    <div class="time">17:00~ 17:30</div>
+                                    <div class="time">17:00~17:30</div>
                                     <div class="txt">晚餐(臺中商旅八仙山莊)</div>
                                 </div>
                             </li>
@@ -191,7 +187,7 @@
                             <li class="spot">
                                 <div class="time-info-title">
                                     <div class="time">19:30~ 20:30</div>
-                                    <div class="txt">戶外觀星</div>
+                                    <div class="txt">室外觀星</div>
                                 </div>
                                 <div class="info-img">
                                     <img src="image/starsky3.jpg">
@@ -222,23 +218,23 @@
                         <div id="cancel" class="location">
                             <h2>取消及注意事項</h2>
                             <div class="caution">
-                                <ul class="caution-card">
-                                    <li>★本次活動將會拍攝照片，
+                                <div class="caution-card">
+                                    <h3>★本次活動將會拍攝照片，
                                         作為本中心撰寫報告與未來宣傳活動使用，
-                                        參加視同同意拍攝照片。</li>
-                                    <li>★如臨時有事，無法參與活動，需要退費，
-                                        請見下方說明：</li>
-                                    <li>(1)6月17日-24日申請取消參加：
+                                        參加視同同意拍攝照片。</h3>
+                                    <h3>★如臨時有事，無法參與活動，需要退費，
+                                        請見下方說明：</h3>
+                                    <p>(1)6月17日-24日申請取消參加：
                                         不退費，可找有意願的朋友更換，
-                                        最晚須於活動前3日來電或來信告知。</li>
-                                    <li>
+                                        最晚須於活動前3日來電或來信告知。</p>
+                                    <p>
                                         (2)因不可抗力因素需申請取消參加：
                                         如遇天災或事變等不可抗力之因素
                                         (如重大傳染疾病等)，
                                         向中心提出取消參加，經中心判定，
                                         需提供相關資料，將扣除匯款手續費，
-                                        其餘退還。</li>
-                                </ul>
+                                        其餘退還。</p>
+                                </div>
                             </div>
                         </div>
                         <div id="location" class="location">
@@ -288,28 +284,40 @@
                                 </div>
                             </div>
                         </div>
-
                     </th>
-
                 </tr>
-
             </table>
-
-
-
         </div>
-
-
         <img class="opleaf only" src="image/opleaf1.png">
         <img class="opleaf thrle" src="image/opleaf2.png">
+    </div>
 
-
-    </header>
-
-
-
-
-
+    <footer class="footer-group">
+        <div class="nav-bottom">
+            <div class="nav-item">
+                <h3>關於我們</h3>
+                <ul class="wh">
+                    <li><a href="#">創辦理念</a></li>
+                    <li><a href="#">師資介紹</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>活動課程</h3>
+                <ul>
+                    <li><a href="#">最新活動</a></li>
+                    <li><a href="#">報名資訊</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>聯絡我們</h3>
+                <ul class="whbg">
+                    <li><p>客服電話</p></li>
+                    <li><p>社群</p></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
 
 
 </body>

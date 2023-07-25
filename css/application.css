@@ -1,29 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-html {
-    background-image: url(../image/backg.jpg);
+@import url('headfoot.css');
 
 
-}
 
-body{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 300;
-    color: #4E4B4B;
-}
-h1{
-    font-family: 'BIZ UDPMincho', serif;
-
-}
 h2{
     margin: 5px 0;
 }
 
-.main-header {
+.main {
     width: 1200px;
     margin: auto;
     box-sizing: border-box;
@@ -32,35 +15,6 @@ h2{
     justify-content: center;
 }
 
-a {
-    text-decoration: none;
-    color: #75523A;
-}
-
-.logo {
-    width: 160px;
-    height: 250px;
-
-
-}
-
-.logo img {
-    width: 100%;
-    display: inline-block;
-    margin: 80px 0;
-}
-
-nav {
-    display: block;
-    margin: 0px 20px;
-    width: 110px;
-}
-
-nav a {
-    display: flex;
-    padding: 8px 20px;
-    justify-content: center;
-}
 
 .slider {
     display: flex;
@@ -221,12 +175,15 @@ nav a {
     border: 1px solid #D9D9D9;
 }
 
+
 .line-short {
     position: relative;
 }
 
 .line-short a {
     line-height: 2;
+    display: flex;
+    text-align: start;
     color: #4E4B4B;
 }
 
@@ -239,7 +196,6 @@ nav a {
     width: 4px;
     height: 20px;
     position: absolute;
-
     left: -10px;
     top: 5px;
     border-radius: 4px;
@@ -266,7 +222,6 @@ td {
     list-style: none;
     padding-left: 30px;
 }
-
 
 .spot {
     padding: 15px 0;
@@ -308,23 +263,17 @@ h2 {
     text-align: start;
 }
 
-
 .time-info-title {
+    width: 600px;
     display: flex;
-    align-items: center;
-
+    align-items: start;
 }
 
 .time {
+    width: 150px;
     margin: 2px 0;
     padding-right: 10px;
 }
-
-.txt,p{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 300;
-}
-
 
 .info-img {
     width: 400px;
@@ -354,16 +303,13 @@ h2 {
     border: 1px solid #84AA6D;
 }
 
-
 .location-card p {
     text-align: start;
 }
 
-
 .caution {
     width: 100%;
     border-radius: 10px;
-
     border: 1px solid #84AA6D;
 }
 
@@ -373,7 +319,6 @@ h2 {
     padding: 20px;
     box-sizing: border-box;
 }
-
 
 .userline {
     display: flex;
@@ -401,4 +346,3 @@ h2 {
     display: flex;
 }
 
-.score p {}
