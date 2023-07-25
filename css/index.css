@@ -1,28 +1,7 @@
+@import url('headfoot.css');
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
-html {
-    background-image: url(../image/backg.jpg);
-   
-    
-
-}
-
-body{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight:300;
-    color:#4E4B4B;
-}
-
-header {
-    width: 100%;
-}
-
-.main-header {
+.main {
     box-sizing: border-box;
     margin: 40px 0px 50px 0px;
     display: inline-block;
@@ -31,36 +10,6 @@ header {
     margin: auto;
     width: 1200px;
     justify-content: space-between;
-}
-
-a {
-    text-decoration: none;
-    color: #75523A;
-}
-h2,h3{
-    font-family: 'BIZ UDPMincho', serif;
-}
-.logo {
-    width: 160px;
-    height: 250px;
-}
-
-.logo img {
-    width: 100%;
-    display: inline-block;
-    margin: 80px 0;
-}
-
-nav {
-    display: block;
-    margin: 0px 20px;
-    width: 110px;
-}
-
-nav a {
-    display: flex;
-    padding: 8px 20px;
-    justify-content: center;
 }
 
 .only {
@@ -86,7 +35,7 @@ nav a {
 .homepage-pic {
     width: 100%;
     position: relative;
-    margin-top:150px;
+    margin-top: 150px;
 }
 
 .dl {
@@ -107,34 +56,40 @@ nav a {
     top: 20px;
 }
 
-.slogan{
-    position:absolute;
-    top:300px;
-      
-}
-.slogan p{
-    width:400px;
-    height:40px;
-    margin: 10px;
-    font-size:36px;
-    padding:10px;
-    text-align:center;
-    background-color:#fff8;
-    border-radius:50px;
-    color:#4E4B4B;;
-    font-family: 'BIZ UDPMincho', serif;
-}
-.slogan span{
-    width:300px;
-    height:30px;
-    font-size:16px;
-    display:flex;
-    background-color:rgba(255, 255, 255, 0.80);
-    align-items:center;
-    border-radius:50px;
-    color:#4E4B4B;;
-    font-family: 'Noto Sans TC', sans-serif;
+.slogan {
+    position: absolute;
+    top: 300px;
 
+}
+
+.slogan p {
+    width: 400px;
+    height: 60px;
+    margin: 10px;
+    font-size: 36px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff8;
+    border-radius: 50px;
+    color: #4E4B4B;
+}
+
+.slogan span {
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.80);
+    align-items: center;
+    border-radius: 50px;
+    color: #4E4B4B;
+}
+
+.phrase {
+    margin: 160px 160px 100px 140px;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .card-list {
@@ -150,7 +105,7 @@ nav a {
     display: flex;
     box-sizing: border-box;
     margin: 10px;
-    
+
 }
 
 .cardbt {
@@ -158,15 +113,12 @@ nav a {
     display: flex;
     justify-content: center;
     align-content: center;
-    
-
 }
 
 .card .pic img {
     width: 80%;
     vertical-align: top;
-    border-radius:20px;
-
+    border-radius: 20px;
 }
 
 .card .pic {
@@ -182,17 +134,16 @@ nav a {
     box-sizing: border-box;
     padding: 10px;
     writing-mode: vertical-lr;
-    
-
 }
-.btn-m{
+
+.btn-m {
     height: 400px;
     display: flex;
     justify-content: end;
-    
+
 }
+
 .buttom-more {
-    font-family: 'BIZ UDPMincho', serif;
     height: 50px;
     width: 30px;
 }
@@ -213,14 +164,16 @@ nav a {
 .txt-new a {
     width: 50px;
     height: 80px;
-    border:1px solid #BC8660;
+    border: 1px solid #BC8660;
     border-radius: 50px;
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
 }
 
-
+.hrr {
+    border-left: 2px solid #D9D9D9;
+}
 
 
 @media screen and (max-width:768px) {
@@ -241,17 +194,17 @@ nav a {
     }
 }
 
-.footer-group {}
+
+.edntlife-group {
+    margin: 80px 0;
+}
 
 .bird-group {
     height: 120px;
     margin: 100px;
     display: flex;
     justify-content: center;
-
 }
-
-
 
 .bird img {
     width: 250px;
@@ -261,8 +214,6 @@ nav a {
     display: flex;
     justify-content: center;
 }
-
-.tinitalk img {}
 
 .egg {
     display: flex;
@@ -282,14 +233,13 @@ nav a {
 .recommend {
     margin: 100px 300px;
     display: flex;
-    position: relative;
     justify-content: center;
 }
 
 
-.pic-person img{
-     border-radius:50%;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+.pic-person img {
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .txt-recom {
@@ -300,15 +250,9 @@ nav a {
     justify-content: center;
     flex-direction: column;
     background: url(../image/bggreen.svg) no-repeat;
-    
-
 }
 
-.footer-group {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
+
 
 .birdh {
     position: absolute;
@@ -316,29 +260,9 @@ nav a {
     top: -50px;
 }
 
-.nav-bottom {
-    width: 100%;
-    height: 330px;
-    background: url(../image/footer2.png) no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: column;
-    list-style: none;
-   
-    
-}
-
-.nav-item {}
-
-.nav-item a {
-   
-    text-decoration: none;
-    margin: 10px;
-}
-
 
 .edntlife-group {
+    margin: 180px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -349,12 +273,14 @@ nav a {
     margin: 50px;
     width: 200px;
     position: relative;
-
 }
 
 .bt-ed img {
     display: flex;
+}
 
+.bt-svg img {
+    width: 100px;
 }
 
 .bt-txt {
@@ -367,8 +293,6 @@ nav a {
     font-size: 32px;
     width: 70px;
     margin: auto;
-    font-family: 'Noto Sans TC', sans-serif;
-
 }
 
 .bt-nt {
@@ -377,15 +301,12 @@ nav a {
     position: relative;
 }
 
-.bt-nt img {}
-
 .bt-life {
     margin: 50px;
     width: 200px;
     position: relative;
 }
 
-.bt-life img {}
 
 .decor-x {
     margin: 50px;
@@ -393,17 +314,12 @@ nav a {
     align-content: center;
 }
 
-.decor-x img {}
-
 .line-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
     margin-left: 250px;
-    
-
-
 }
 
 .white {
@@ -420,8 +336,45 @@ nav a {
     margin: auto;
 }
 
-.horizon{
+.horizon {
     margin: 50px;
     width: 300px;
     height: 0.1px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.nav-bottom {
+    width:100%;
+     height: 300px;
+     border-top: 2px solid #84AA6D;
+     display: flex;
+    align-items: center;
+     justify-content: center;
+     list-style: none;
+}
+
+.nav-item {
+    text-align:center;
+}
+
+ul{
+ background-color:#fff;
+ width:200px;
+ text-align:center;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    margin: 10px;
+    
+   
+}
+.tibame{
+    text-align: center;
 }

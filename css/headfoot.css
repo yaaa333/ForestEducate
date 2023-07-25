@@ -21,12 +21,10 @@ body{
 
 
 .main {
-    width: 100%;
+    width: 1200px;
     margin: 40px 0px 50px 0px;
     display: flex;
     margin: auto;
-    width: 1200px;
-    
 }
 
 a {
@@ -92,4 +90,7 @@ ul{
     margin: 10px;
     
    
+}
+.tibame{
+    text-align: center;
 }

@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>森林育Forest Educate</title>
     <link rel="stylesheet"  href="css/index.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="main-header">
-        <div>
+    <div class="main">
+        <header>
             <div class="logo">
                 <a href="#"><img src="image/f2.svg" alt="logo"></a>
             </div>
@@ -28,7 +22,7 @@
                 <a href="application.html">報名資訊</a>
                 <a href="logoin.html">會員登入</a>
             </nav>
-        </div>
+        </header>
 
         <div class="homepage">
             <div class="homepage-pic">
@@ -46,8 +40,23 @@
         <img class="opleaf only" src="image/opleaf1.png">
         <img class="opleaf thrle" src="image/opleaf2.png">
 
+    </div>
 
-    </header>
+    <div>
+        <div class="phrase">
+            <p>樹林下的落葉 紛飛起舞、<br>
+                悶熱午後下的 冰涼細雨、<br>
+                風中山林搖曳 喧鬧不已、<br>
+                清晨草地留下 淡淡清新。<br>
+                <br>
+                大自然的每一個細節，都是身體的記憶。<br>
+                一起用感官去感受大自然的奧妙。</p>
+        </div>
+        <div>
+            <img src="#">
+        </div>
+    </div>
+
 
     <div class="card-list">
         <div class="card cardfl">
@@ -56,7 +65,7 @@
             </div>
             <div class="txt-new">
                 <h3>最新活動</h3>
-                <hr>
+                <div class="hrr"></div>
                 <div class="btn-m">
                     <a class="buttom-more" href="#">more</a>
                 </div>
@@ -68,7 +77,7 @@
             </div>
             <div class="txt-new">
                 <h3>蟲鳴鳥叫</h3>
-                <hr>
+                <div class="hrr"></div>
                 <p>鳥語花香</p>
             </div>
         </div>
@@ -77,11 +86,11 @@
     <div class="edntlife-group">
         <div class="bt-ed">
             <div class="bt-svg">
-                <a href="#"><img src="image/gray.png"></a>
-            </div>
+                <a href="#"><img src="image/gray.png">
             <div class="bt-txt">
                 <p>親子教育</p>
             </div>
+                </a></div>
         </div>
 
         <div class="decor-x">
@@ -90,11 +99,11 @@
 
         <div class="bt-nt">
             <div class="bt-svg">
-                <img src="image/green.png">
-            </div>
+                <a href="#"><img src="image/green.png">
             <div class="bt-txt">
                 <p>自然教育</p>
             </div>
+                </a></div>
         </div>
 
         <div class="decor-x">
@@ -103,11 +112,11 @@
 
         <div class="bt-life">
             <div class="bt-svg">
-                <img src="image/brown.png">
-            </div>
+                <a href="#"><img src="image/brown.png">
             <div class="bt-txt">
                 <p>生活教育</p>
             </div>
+                </a></div>
         </div>
     </div>
 
@@ -158,25 +167,31 @@
     </div>
 
     <footer class="footer-group">
-        <ul class="nav-bottom">
-            <li class="nav-item">
-                <a href="#" class="nav-link">聯絡我們</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">常見問題</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">相關報導</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">社群</a>
-            </li>
-           <p>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
-        </ul>
-        
-        <img class="birdh" src="image/birdh.png">
-
+        <div class="nav-bottom">
+            <div class="nav-item">
+                <h3>關於我們</h3>
+                <ul class="wh">
+                    <li><a href="#">創辦理念</a></li>
+                    <li><a href="#">師資介紹</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>活動課程</h3>
+                <ul>
+                    <li><a href="#">最新活動</a></li>
+                    <li><a href="#">報名資訊</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>聯絡我們</h3>
+                <ul class="whbg">
+                    <li><p>客服電話</p></li>
+                    <li><a href="#">社群</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+     <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
 
 </body>
 
