@@ -1,57 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-html {
-    background-image: url(../image/backg.jpg);
-    background-attachment: fixed;
-}
-
-body {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 300;
-    color: #4E4B4B;
-}
-
-.main {
-    width: 1200px;
-    box-sizing: border-box;
-    display: flex;
-    margin: auto;
-}
-
-h1,h2{
-    font-family: 'BIZ UDPMincho', serif;
-}
-a {
-    text-decoration: none;
-    color: #75523A;
-}
-
-.logo {
-    width: 160px;
-    height: 250px;
-}
-
-.logo img {
-    width: 100%;
-    display: inline-block;
-    margin: 80px 0;
-}
-
-.navbar {
-    display: block;
-    margin: 0px 20px;
-    width: 110px;
-}
-
-.navbar a {
-    display: flex;
-    padding: 8px 20px;
-    justify-content: center;
-}
+@import url('headfoot.css');
 
 
 .container {
@@ -86,12 +33,11 @@ a {
     width: 50%;
     padding: 10px 20px;
     margin:20px;
-   
     display:flex;
     flex-direction:column;
     align-items: center; 
     border-radius:10px;
-    background-color:#B1E392;
+    border:2px solid #B1E392 ;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -110,5 +56,6 @@ a {
     margin:10px;
     border-radius:8px;
    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    background-color:#fff;
+   color:#D9D9D9;
+    background-color:#84AA6D;
 }
