@@ -1,6 +1,18 @@
 @import url('headfoot.css');
 
 
+.navbar {
+    display: block;
+    margin: 0px 20px;
+    width: 110px;
+}
+
+.navbar a {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+}
+
 .hashtag-group {
     display: flex;
     justify-content: center;

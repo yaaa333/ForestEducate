@@ -43,13 +43,13 @@ a {
     margin: 80px 0;
 }
 
-.navbar {
+nav {
     display: block;
     margin: 0px 20px;
     width: 110px;
 }
 
-.navbar a {
+nav a {
     display: flex;
     padding: 8px 20px;
     justify-content: center;
