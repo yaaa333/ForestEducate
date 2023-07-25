@@ -1,17 +1,72 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
+html {
+    background-image: url(../image/backg.jpg);
+    background-attachment: fixed;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    color: #4E4B4B;
+}
+
+.main {
+    width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+}
+
+h1,h2{
+    font-family: 'BIZ UDPMincho', serif;
+}
+a {
+    text-decoration: none;
+    color: #75523A;
+}
+
+.logo {
+    width: 160px;
+    height: 250px;
+}
+
+.logo img {
+    width: 100%;
+    display: inline-block;
+    margin: 80px 0;
+}
+
+.navbar {
+    display: block;
+    margin: 0px 20px;
+    width: 110px;
+}
+
+.navbar a {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+}
+
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: 120px 0 0 120px;
     padding: 20px;
 }
 
-.section {
-    margin-bottom: 40px;
+.teacher-group {
+   
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+    border:1px solid #ff006e;
 }
 
 h1 {
@@ -19,20 +74,34 @@ h1 {
     margin-bottom: 20px;
 }
 
-.column {
-    float: left;
+.tcpart-group{
+    display:flex;
+ 
+}
+
+.tcpart {
     width: 33.33%;
     padding: 10px;
-    box-sizing: border-box;
+    margin:20px;
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center; 
+    border-radius:10px;
+    border:1px solid #000;
 }
 
-img {
+.tcpart img {
     width: 100%;
     height: auto;
-    display: block;
+    padding:10px;
     margin-bottom: 10px;
+    border-radius:15px;
 }
 
-p {
+.tcpart p {
+    width: 250px;
     text-align: center;
+    border-radius:10px;
+   border:1px solid #000;
 }
