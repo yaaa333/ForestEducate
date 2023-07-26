@@ -1,6 +1,23 @@
 @import url('headfoot.css');
 
 
+.page-top-btn {
+    width: 40px;
+  }
+
+  .page-top-btn a{
+    width: 10px;
+    color:aqua
+  }
+  
+  .pagetop {
+    width: 40px;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 10;
+  }
+
 .main {
     box-sizing: border-box;
     margin: 40px 0px 50px 0px;
