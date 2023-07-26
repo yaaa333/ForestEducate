@@ -19,6 +19,23 @@ body{
     color:#4E4B4B;
 }
 
+.page-top-btn {
+    width: 40px;
+  }
+
+  .page-top-btn a{
+    width: 10px;
+    color:aqua
+  }
+  
+  .pagetop {
+    width: 40px;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 10;
+  }
+
 
 .main {
     width: 1200px;
