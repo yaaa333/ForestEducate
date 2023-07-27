@@ -5,85 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/from.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
+    <div class="main">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="image/f2.svg" alt="logo"></a>
+            </div>
+            <nav>
+                <a href="about.html">關於我們</a>
+                <a href="activity.html">課程活動</a>
+                <a href="teachers.html">師資介紹</a>
+                <a href="application.html">報名資訊</a>
+                <a href="logoin.html">會員登入</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <form class="form-group">
+                <div class="form-acti">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-acti sex">
+                    <label>性別:</label>
+                    <input type="radio" id="male" name="gender" value="男" required>
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="gender" value="女" required>
+                    <label for="female">女</label>
+                    <input type="radio" id="nomean" name="gender" value="不公開" required>
+                    <label for="nomean">不公開</label>
+                </div>
+
+                <div class="form-acti">
+                    <label for="birthday">生日:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+
+                <div class="form-acti">
+                    <label for="">身分證(保險用):</label>
+                    <input id="" type="text" minlength="10" maxlength="10">
+                </div>
+
+                <div class="form-acti">
+                    <label for="address">地址:</label>
+                    <textarea id="address" name="address" rows="4" required placeholder="請輸入您的地址"></textarea>
+                </div>
+
+                <div class="form-acti">
+                    <label for="">緊急聯絡人:</label>
+                    <input id="" type="text">
+                </div>
+
+                <div class="form-acti">
+                    <label for="verification">驗證碼:</label>
+                    <input type="text" id="verification" name="verification" required>
+                    <img src="image/number.jpg" alt="驗證碼">
+                </div>
+                <div class="form-acti">
+                    <button type="submit">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
    
-    <header class="main-header">
-        <div class="logo">
-            <a href="#"><img src="image/f2.svg" alt="logo"></a>
-        </div>
-        <nav>
-            <a href="about.html">關於我們</a>
-            <a href="activity.html">課程活動</a>
-            <a href="teachers.html">師資介紹</a>
-            <a href="application.html">報名資訊</a>
-            <a href="logoin.html">會員登入</a>
-        </nav>
-    </header>
-
-
-
-
-
-    
-
-    <form>
-
-        <div class="form-group">
-            <label for="name">姓名:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-
-        <div class="form-group sex">
-            <label>性別:</label>
-            <input type="radio" id="male" name="gender" value="男" required>
-            <label for="male">男</label>
-            <input type="radio" id="female" name="gender" value="女" required>
-            <label for="female">女</label>
-            <input type="radio" id="nomean" name="gender" value="不公開" required>
-            <label for="nomean">不公開</label>
-        </div>
-
-        <div class="form-group">
-            <label for="birthday">生日:</label>
-            <input type="date" id="birthday" name="birthday" required>
-        </div>
-
-        <div class="form-group">
-            <label for="address">地址:</label>
-            <textarea id="address" name="address" rows="4" required></textarea>
-        </div>
-
-        <div class="form-group">
-            <label for="verification">驗證碼:</label>
-            <input type="text" id="verification" name="verification" required>
-            <img src="captcha.png" alt="驗證碼">
-        </div>
-
-        <button type="submit">提交</button>
-    </form>
-
-
-
     <footer class="footer-group">
-        <ul class="nav-bottom">
-            <li class="nav-item">
-                <a href="#" class="nav-link">聯絡我們</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">常見問題</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">相關報導</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">社群</a>
-            </li>
-        </ul>
-
+        <div class="nav-bottom">
+            <div class="nav-item">
+                <h3>關於我們</h3>
+                <ul class="wh">
+                    <li><a href="#">創辦理念</a></li>
+                    <li><a href="#">師資介紹</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>活動課程</h3>
+                <ul>
+                    <li><a href="#">最新活動</a></li>
+                    <li><a href="#">報名資訊</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>聯絡我們</h3>
+                <ul class="whbg">
+                    <li><p>客服電話</p></li>
+                    <li><a href="#">社群</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
 </body>
 
 </html>

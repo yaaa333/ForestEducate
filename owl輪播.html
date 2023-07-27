@@ -1,0 +1,47 @@
+
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Owl Carousel 輪播範例</title>
+      <!-- 引入 Owl Carousel 的 CSS 檔案 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <!-- 引入 Owl Carousel 的 JavaScript 檔案 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    </head>
+    <body>
+      <!-- 輪播項目 -->
+      <div class="owl-carousel">
+        <div class="item"><img src="image/owl.jpg" alt="Image 1"></div>
+        <div class="item"><img src="image/owl2.jpg" alt="Image 2"></div>
+        <div class="item"><img src="image/sk.jpg" alt="Image 3"></div>
+      </div>
+    
+      <!-- 初始化 Owl Carousel -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }
+          });
+        });
+      </script>
+    </body>
+    </html>
+    
