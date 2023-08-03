@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>報名資訊</title>
     <link rel="stylesheet" href="css/application.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/application.js"></script>
 </head>
 
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="main">
         <header>
             <div class="logo">
                 <a href="index.html"><img src="image/f2.svg" alt="logo"></a>
             </div>
+
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
             <nav>
                 <a href="about.html">關於我們</a>
                 <a href="activity.html">課程活動</a>
@@ -27,6 +39,8 @@
             <a href="#top"><img src="image/whbird.png" class="page-top-btn" ></img>回到頂部</a></div>
 
         <div class="slider">
+            <div id="curPos">首頁>><a href="index.html">課程活動</a>>><b>報名資訊</b></div>
+            <h1>森森夏日浪漫星空</h1>
             <div class="slider-container">
                 <div class="big-image">
                     <img id="large" src="image/starsky2.jpg" alt="大圖">
@@ -34,33 +48,15 @@
                 <div id="smallPanel" class="small-images">
                     <img src="image/starsky2.jpg" alt="小圖">
                     <img src="image/owl2.jpg" alt="小圖">
-                    <img src="image/forest2.jpg" alt="小圖">
-                    <img src="image/camera.jpg" alt="小圖">
+                    <img src="image/telescope2.jpg" alt="小圖">
+                    <img src="image/starsky4.jpg" alt="小圖">
                 </div>
             </div>
 
-            <script>
-                function showLarge(e){
-                    
-                      document.getElementById("large").src = e.target.src;
-                }
-                
-                function init(){
-                    
-                    let smalls = document.querySelectorAll("#smallPanel img");
-                    for(let i=0; i<smalls.length; i++){
-                        smalls[i].onclick = showLarge;
-                    }
-                }
-                
-                window.addEventListener("load", init, false);
-                </script>
-
-
+           
             <div class="outdoor">
                 <div class="container">
                     <div class="explain fsttit">
-                        <h1>森森夏日浪漫星空</h1>
                         <div class="icon-group">
                             <div class="oneday">
                                 <img src="image/clock-icon 1.png">
@@ -199,7 +195,7 @@
                             </li>
                             <li class="spot">
                                 <div class="time-info-title">
-                                    <div class="time">20:30後</div>
+                                    <div class="time">20:30 之後</div>
                                     <div class="txt">自由活動，結束觀星旅程。</div>
                                 </div>
                             </li>
@@ -244,16 +240,16 @@
                         <div id="location" class="location">
                             <h2>學員評價</h2>
                             <div class="userline">
-                                <img class="usergirl" src="image/girl.jpg">
+                                <img class="usergirl" src="image/women.jpg">
                                 <p>Tina</p>
                                 <p>2023/1/2</p>
                             </div>
                             <div class="userline fivestar">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
                             </div>
                             <div class="caution score">
                                 <div class="caution-card">
@@ -273,11 +269,11 @@
                                 <p>2023/1/2</p>
                             </div>
                             <div class="userline fivestar">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
-                                <img class="staricon" src="image/star-icon.svg">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
+                                <img class="staricon" src="image/star-icon.png">
                             </div>
                             <div class="caution score">
                                 <div class="caution-card">
@@ -288,6 +284,35 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div id="location" class="location">
+                            <h2>心得分享</h2>
+                            <div class="userline">
+                                <img class="usergirl" src="image/girl.jpg">
+                                <div class="pshare">
+                                    <label for="name">名稱:</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="userline fivestar">
+                                評分:
+                                <i class="fa-solid fa-star" onclick="rateStar(1)" onmouseover="highlightStar(1)" onmouseout="resetStars()"></i>
+                                <i class="fa-solid fa-star" onclick="rateStar(2)" onmouseover="highlightStar(2)" onmouseout="resetStars()"></i>
+                                <i class="fa-solid fa-star" onclick="rateStar(3)" onmouseover="highlightStar(3)" onmouseout="resetStars()"></i>
+                                <i class="fa-solid fa-star" onclick="rateStar(4)" onmouseover="highlightStar(4)" onmouseout="resetStars()"></i>
+                                <i class="fa-solid fa-star" onclick="rateStar(5)" onmouseover="highlightStar(5)" onmouseout="resetStars()"></i>
+                            </div>
+                            <div class="caution score">
+                                <div class="caution-card">
+                                    <label for="pword"></label>
+                                    <textarea id="pword" rows="6" required placeholder="分享您的心得，讓更多人知道!"></textarea>
+                                </div>
+                            </div>
+                            <div >
+                                <button class="psharebtn" type="submit">送出</button>
+                            </div>
+                        </div>
+
                     </th>
                 </tr>
             </table>
