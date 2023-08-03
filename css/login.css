@@ -1,6 +1,9 @@
 @import url('headfoot.css');
 
-
+.logtit{
+    font-size: 32px;
+    color: #4E4B4B;
+}
 
 form {
     width: 400px;
@@ -25,9 +28,7 @@ form {
 .form-acti {
     margin-bottom: 15px;
 }
- .sex{
-    display: flex;
- }
+
 
 label {
     display: block;
@@ -35,9 +36,9 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="date"],
-textarea {
+input[type="email"],
+input[type="password"],
+input[type="text"] {
     width: 50%;
     padding: 8px;
     color:#fff;
@@ -45,10 +46,6 @@ textarea {
     background-color: #84AA6D;
     border-radius: 4px;
     font-size: 16px;
-}
-
-input[type="radio"] {
-    margin: 0 5px;
 }
 
 

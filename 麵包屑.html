@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 假設麵包屑資訊會根據不同頁面而變化 -->
+<!-- 首頁 -->
+<div id="curPos">首頁>><b>會員專區</b></div>
+
+<!-- 活動資訊頁面 -->
+<div id="curPos">首頁>><a href="index.html">課程活動</a>>><b>報名資訊</b></div>
+
+<!-- 報名資訊頁面 -->
+<div id="curPos">首頁>><a href="index.html">會員專區</a>>><a href="活動資訊.html">活動資訊</a>>><b>報名資訊</b></div>
+
+
+<script type="text/javascript">
+    function $(id) {
+        let obj = document.getElementById(id);
+    
+        obj.text = function(text) {
+            obj.innerText = text;
+            return obj;
+        }
+    
+        obj.html = function(html) {
+            obj.innerHTML = html;
+            return obj;
+        }
+    
+        obj.css = function(css, value) {
+            obj.style[css] = value;
+            return obj;
+        }
+    
+        return obj;
+    }
+    
+    // 假設麵包屑資訊會根據不同頁面而變化，您需要根據不同頁面的標題更新麵包屑的內容
+    // 首頁
+    $("curPos").html("首頁>><b>會員專區</b>").css("color", "deeppink");
+    
+    // 活動資訊頁面
+    $("curPos").html("首頁>><a href='index.html'>會員專區</a>>><b>活動資訊</b>").css("color", "deeppink");
+    
+    // 報名資訊頁面
+    $("curPos").html("首頁>><a href='index.html'>會員專區</a>>><a href='活動資訊.html'>活動資訊</a>>><b>報名資訊</b>").css("color", "deeppink");
+    </script>
+    
+</body>
+</html>
