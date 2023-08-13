@@ -195,6 +195,10 @@
         position: relative;
     }
 
+    element.style{
+        display: block;
+    }
+
     .indexlogo {
         display: none;
     }
@@ -278,6 +282,7 @@
             rotate 1s 0s;
     }
     .list-group {
+        width: 100%;
         margin: 0;
     }
     .list {
@@ -289,7 +294,7 @@
         margin: 2px;
         padding: 6px 0;
     }
-    .card{
+    .list .card{
         width: 80%;
         margin: 30px auto;
         display: block;

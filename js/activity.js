@@ -11,16 +11,32 @@ items.forEach(item => {
 item.style.display = 'flex';
 });
 
+function updateDisplayProperties() {
+    const screenWidth = window.innerWidth;
+
+    items.forEach(item => {
+        if (screenWidth <= 480) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'flex';
+        }
+    });
+}
+
+updateDisplayProperties();
+
+window.addEventListener('resize', updateDisplayProperties);
+
 pickButton.forEach(button => {
     button.addEventListener('click', () => {
         const category = button.getAttribute('data-category');
-        
+
         items.forEach(item => {
             const categories = item.getAttribute('data-categories');
             if (categories.includes(category)) {
                 item.style.display = 'flex';
-        } else {
-            item.style.display = 'none';
+            } else {
+                item.style.display = 'none';
             }
         });
     });
