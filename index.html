@@ -5,25 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>森林育Forest Educate</title>
-    <link rel="stylesheet"  href="css/index.css" >
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="main">
         <header>
             <div class="logo">
-                <a href="#"><img src="image/f2.svg" alt="logo"></a>
+                <a class="indexlogo" href="#"><img src="image/logo.svg" alt="logo"></a>
+                <a class="phonelogo" href="#"><img src="image/logo2.png" alt="logo"></a>
             </div>
+
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
             <nav>
                 <a href="about.html">關於我們</a>
-                <a href="activity.html">課程活動</a>
+                <div class="clabtn">
+                    <a href="activity.html">課程活動</a>
+                    <div class="apbtn">
+                        <a href="application.html">報名資訊</a>
+                    </div>
+                </div>
                 <a href="teachers.html">師資介紹</a>
-                <a href="application.html">報名資訊</a>
-                <a href="logoin.html">會員登入</a>
+                <a href="login.html">會員登入</a>
             </nav>
         </header>
-       <div class="pagetop">
-        <a href="#top"><img src="image/whbird.png" class="page-top-btn" ></img>回到頂部</a></div>
+
+        <div class="pagetop">
+            <a href="#top"><img src="image/whbird.png" class="page-top-btn"></img>回到頂部</a>
+        </div>
         <div class="homepage">
             <div class="homepage-pic">
                 <img src="image/hp.png" alt="首頁森林大圖">
@@ -36,9 +54,14 @@
                 </div>
             </div>
         </div>
-
-        <img class="opleaf only" src="image/opleaf1.png">
-        <img class="opleaf thrle" src="image/opleaf2.png">
+        <div class="only">
+            <img src="image/opleaf1.png" alt="落葉圖片">
+        </div>
+        <div class="thrle opleaf">
+        <img src="image/opleaf2.png" alt="落葉圖片">
+        </div>
+        <script src="script.js"></script>
+        
     </div>
 
     <div>
@@ -49,10 +72,11 @@
                 清晨草地留下 淡淡清新。<br>
                 <br>
                 大自然的每一個細節，都是身體的記憶。<br>
-                一起用感官去感受大自然的奧妙。</p>
+                一起用感官去感受大自然的奧妙。
+            </p>
         </div>
         <div>
-          
+
         </div>
     </div>
 
@@ -60,24 +84,31 @@
     <div class="card-list">
         <div class="card cardfl">
             <div class="pic">
-                <img src="image/btf2.jpg">
+                <img src="image/wflower2.jpg">
+                <p class="txt">
+                    親愛的桐伴<span>與最愛的家人，牽手認識油桐花</span>
+                </p>
             </div>
+
             <div class="txt-new">
                 <h3>最新活動</h3>
                 <div class="hrr"></div>
                 <div class="btn-m">
-                    <a class="buttom-more" href="#">more</a>
+                    <a class="buttom-more" href="activity.html">more</a>
                 </div>
             </div>
         </div>
         <div class="card cardbt">
             <div class="pic">
-                <img src="image/wflower2.jpg">
+                <img src="image/btf2.jpg">
+                <p class="txt">
+                    蝴蝶夏令營<span>探索桃園虎頭山，化身最棒的昆蟲特務</span>
+                </p>
             </div>
             <div class="txt-new">
-                <h3>蟲鳴鳥叫</h3>
+                <p>蟲鳴鳥叫，鳥語花香</p>
                 <div class="hrr"></div>
-                <p>鳥語花香</p>
+                <p>一起深入探索奧妙的大自然。</p>
             </div>
         </div>
     </div>
@@ -85,11 +116,12 @@
     <div class="edntlife-group">
         <div class="bt-ed">
             <div class="bt-svg">
-                <a href="#"><img src="image/gray.png">
-            <div class="bt-txt">
-                <p>親子教育</p>
+                <a href="activity.html"><img src="image/o1.png">
+                    <div class="bt-txt">
+                        <p>親子教育</p>
+                    </div>
+                </a>
             </div>
-                </a></div>
         </div>
 
         <div class="decor-x">
@@ -98,11 +130,12 @@
 
         <div class="bt-nt">
             <div class="bt-svg">
-                <a href="#"><img src="image/green.png">
-            <div class="bt-txt">
-                <p>自然教育</p>
+                <a href="activity.html"><img src="image/g1.jpeg">
+                    <div class="bt-txt">
+                        <p>自然教育</p>
+                    </div>
+                </a>
             </div>
-                </a></div>
         </div>
 
         <div class="decor-x">
@@ -111,11 +144,12 @@
 
         <div class="bt-life">
             <div class="bt-svg">
-                <a href="#"><img src="image/brown.png">
-            <div class="bt-txt">
-                <p>生活教育</p>
+                <a href="activity.html"><img src="image/b2.png">
+                    <div class="bt-txt">
+                        <p>生活教育</p>
+                    </div>
+                </a>
             </div>
-                </a></div>
         </div>
     </div>
 
@@ -135,14 +169,17 @@
             <div class="tinitalk">
                 <img src="image/twoline.svg">
             </div>
+            
             <div class="egg">
                 <a href="#"><img src="image/greenegg.png"></a>
                 <a href="#"><img src="image/brownegg.png"></a>
                 <a href="#"><img src="image/grayegg.png"></a>
                 <a href="#"><img src="image/blackegg.png"></a>
             </div>
-
         </div>
+            <script src="js/index.js"></script>
+            
+        
         <div class="recommend">
             <div class="pic-person">
                 <img src="image/women.jpg">
@@ -180,13 +217,22 @@
             <div class="nav-item">
                 <h3>聯絡我們</h3>
                 <ul class="whbg">
-                    <li><p>客服電話</p></li>
-                    <li><a href="#">社群</a></li>
+                    <li>
+                        <p>社群
+                          <i class="fa-brands fa-facebook" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-instagram" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-twitter" style="color: #bc8660;"></i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>客服電話:03-0814000</p>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
-     <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
+    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+   <script src="js/activity.js"></script>
 
 </body>
 

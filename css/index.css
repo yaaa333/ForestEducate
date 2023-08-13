@@ -1,38 +1,78 @@
 @import url('headfoot.css');
 
 
-.main {
+.main { 
+    width: 1200px;
     box-sizing: border-box;
     margin: 40px 0px 50px 0px;
     display: inline-block;
     position: relative;
     display: flex;
     margin: auto;
-    width: 1200px;
     justify-content: space-between;
 }
 
-.only {
-
+/* .only {
+   
     position: fixed;
     display: flex;
     right: 250px;
     top: 250px;
     width: 80px;
     height: 70px;
+} */
+.only {
+    position: absolute;
+    top: 0;
+    left: 110%;
+    /* transform: translateX(-50%); */
+    /* opacity: 0; */
+}
+.only img {
+    width: 80px;
+    height: auto;
+    /* position: absolute; */
+    animation: falling 12s linear infinite;
 }
 
 .thrle {
+position: absolute;
+top: 0;
+left: -10%;
+}
+.thrle img {
+    width: 90%;
+    height: auto;
+    /* position: absolute; */
+    animation: falling 8s linear infinite;
+}
+/* .thrle {
     position: fixed;
     display: flex;
     width: 140px;
     height: 140px;
     left: 200px;
     bottom: 450px;
+} */
+
+@keyframes falling {
+    0% {
+        transform: translateY(-10%) translateX(-100%) rotate(60deg);
+        opacity: 1;
+    }
+
+    50%{
+        transform:translateY(100vh) translateX(-50%) rotate(-60deg) ;
+    }
+
+    100% {
+        transform: translateY(100vh) translateX(100%) ;
+        opacity: 0;
+    }
 }
 
 .homepage-pic {
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     margin-top: 150px;
 }
@@ -106,6 +146,39 @@
 
 }
 
+.card .pic{
+    width: 100%;
+    width: 80%;
+    /* vertical-align: top; */
+    /* display: block; */
+    padding: 10px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.card .txt{
+    width: 80px;
+    font-size: 36px;
+    /* text-orientation: upright; */
+    writing-mode: vertical-lr;
+    background-color: #fff8;
+    position: absolute;
+    height: 85%;
+    right: 15%;
+    top: 2.3%; 
+    padding:42px 10px 0 10px;
+}
+
+.cardfl .txt{
+    right: unset;
+    left: 15%;
+}
+.txt span{
+    padding-top: 30px;
+    display: block;
+    font-size: 16px;
+}
 .cardbt {
     flex-direction: row-reverse;
     display: flex;
@@ -119,15 +192,8 @@
     border-radius: 20px;
 }
 
-.card .pic {
-    width: 80%;
-    box-sizing: border-box;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
 
-.card .txt-new {
+.txt-new {
     width: 20%;
     box-sizing: border-box;
     padding: 10px;
@@ -158,19 +224,347 @@
     justify-content: center;
     padding-left: 10px;
 }
+.txt-new p:first-child {
+    margin: -145px 0 0 52px;
+    
+}
 
 .txt-new a {
-    width: 50px;
+    width: 42px;
     height: 80px;
+    margin-left: 10px;
     border: 1px solid #BC8660;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-orientation: upright;
 }
 
 .hrr {
     border-left: 2px solid #D9D9D9;
+}
+
+/* 這裡是手機區小於480 */
+@media screen and (max-width: 480px) {
+    html {
+        background-image: none;
+    }
+
+    body {
+        /* padding-bottom: 130px; */
+    }
+
+    .main {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    header {
+        /* width: 100%; */
+        height: 60px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #84AA6D;
+        position: relative;
+    }
+
+    .indexlogo {
+        display: none;
+    }
+
+    .phonelogo {
+        display: block;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    .logo img {
+
+        padding: 5px;
+        /* box-sizing: border-box;
+         background-color: #fff;
+         border-radius: 50%; */
+    }
+
+    .hb {
+        height: 40px;
+
+    }
+
+    nav {
+        position: absolute;
+        width: 80%;
+        height: calc(100vh - 60px);
+        /* margin:  5% 0; */
+        z-index: 1;
+        background-color: #eee;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        /* display: none; */
+        translate: 100% 0%;
+        transition: 1s;
+        opacity: 0;
+    }
+
+
+    .main nav a {
+        font-size: 24px;
+        padding: 20px 0;
+        color: #4E4B4B;
+    }
+
+    nav a:hover {
+
+        color: #fff;
+        background-color: #4E4B4B;
+        transition: 1s;
+        opacity: 0.5;
+
+    }
+
+    nav a+a {
+        border-top: 1px solid #fff;
+    }
+
+    /* 在checkbox被點擊後 .main-header的mainnav要flex */
+    #menu-switch:checked+.main nav {
+        /* display: flex; */
+        translate: 20% 0%;
+        opacity: 1;
+    }
+
+    .hb span:nth-child(1) {
+        /* 位移 */
+        translate: 0px -10px;
+        /* 角度 */
+        rotate: 0deg;
+        transition: tranlate 1s 1s,
+            rotate 1s 0s;
+    }
+
+    .hb span:nth-child(2) {
+        /* 透明度 */
+        opacity: 1;
+        transition: tranlate 1s 1s,
+            rotate 1s 2s;
+    }
+
+    .hb span:nth-child(3) {
+        translate: 0px 10px;
+        rotate: 0deg;
+        transition: tranlate 1s 1s,
+            rotate 1s 0s;
+    }
+
+    .homepage-pic {
+        margin: 50px 20px 50px 30px;
+        text-align: center;
+    }
+
+    .homepage-pic img {
+        width: 90%;
+    }
+
+    .slogan {
+        top: 100px;
+        left: 8px;
+
+    }
+
+    .slogan p {
+        font-size: 24px;
+        height: auto;
+        width: auto;
+        padding: 0 15px 5px 15px;
+    }
+
+    .slogan span {
+        font-size: 14px;
+        width: 260px;
+        justify-content: center;
+    }
+
+    .dl,
+    .tl,
+    .sl,
+    .only,
+    .thrle {
+        display: none;
+    }
+
+    .phrase {
+        margin: 50px;
+        text-align: center;
+    }
+
+    .card-list {
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    .card-list .card {
+        width: 100%;
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+
+    .card .pic {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        /* width: calc(100% - 20px); */
+        
+    }
+    .card .txt{
+        width: auto;
+        font-size: 30px;
+        padding: 20px;
+        height: unset;
+        right: unset;
+        top: unset; 
+        writing-mode: unset;
+        position: unset;
+    }
+    .txt span{
+        padding-top: 0;
+    }
+
+    .pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .txt-new {
+        width: 100%;
+        padding: 0;
+        writing-mode: unset;
+    }
+
+    .txt-new h3 {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .txt-new a {
+        width: 25%;
+        height: 45px;
+        text-align: center;
+    }
+
+    .btn-m {
+        height: auto;
+        justify-content: center;
+    }
+
+    .cardbt .txt-new {
+        display: none;
+    }
+
+    body .edntlife-group {
+        width: 100%;
+        margin: 50px 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .edntlife-group .bt-ed {
+        margin: 20px;
+        width: 30%;
+
+
+    }
+
+    .edntlife-group .bt-nt {
+        margin: 20px;
+        width: 30%;
+
+    }
+
+    .edntlife-group .bt-life {
+        margin: 20px;
+        width: 30%;
+
+    }
+
+    .bt-svg a img {
+        width: 80%;
+        margin: 8px;
+    }
+
+    .bt-svg .bt-txt {
+        font-size: 28px;
+    }
+
+    .edntlife-group .decor-x {
+        margin: 0;
+    }
+
+    .decor-x img {
+        width: 70%;
+    }
+
+    body .line-group {
+        margin: 45px 0;
+    }
+
+    .line-group .white {
+        height: 0;
+    }
+
+    .line-group .white p {
+        padding: 0 10px 20px 10px;
+    }
+
+    .line-group .horizon {
+        margin: 7px;
+        width: 140px;
+    }
+
+    .true-group .bird-group {
+        margin: 0;
+    }
+
+    .bird-group .bird img {
+        width: 35%;
+        margin: 40px 0 0 50px;
+    }
+
+    .bird-group .tinitalk,
+    .bird-group .egg {
+        display: none;
+    }
+    .true-group .recommend {
+        margin: 0;
+        display: block;
+        overflow: hidden;
+    }
+    .recommend .txt-recom {
+        width: 500px;
+        height: 448px;
+        margin: -160px 0 0 -44px;
+        background-size: cover;
+    }
+    .pic-person {
+        width: 60%;
+        padding-top: 5px;
+        margin-left:135px;
+    }
+
+    .pic-person img {
+        width: 100%;
+    }
+
 }
 
 
@@ -179,7 +573,7 @@
         max-width: 1200px;
     }
 
-    .card {
+    /* .card {
         display: flex;
         flex-wrap: wrap;
         margin: 10px;
@@ -189,13 +583,11 @@
     .card .pic,
     .card .txt {
         width: 100%;
-    }
+    } */
 }
 
 
-.edntlife-group {
-    margin: 80px 0;
-}
+
 
 .bird-group {
     height: 120px;
@@ -228,6 +620,34 @@
 .egg a {
     display: flex;
     align-content: center;
+}
+
+
+.eggsk {
+    position: relative;
+}
+
+.eggsk img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.shake {
+    animation: 0.5s shake 0.5s;
+}
+
+@keyframes shake {
+
+    0%,100% {
+        transform: translateX(0);
+    }
+
+    10%,30%,50%,70%,90% {
+        transform: translateX(-5px);
+    }
+
+    20%,40%,60%,80% {
+        transform: translateX(5px);
+    }
 }
 
 .recommend {
@@ -265,15 +685,15 @@
 .edntlife-group {
     margin: 180px 0;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-content: center;
 }
 
 .bt-ed {
     margin: 50px;
-    width: 200px;
-    position: relative;
+    /* width: 200px;
+    position: relative; */
 }
 
 .bt-ed img {
@@ -286,7 +706,7 @@
 
 .bt-txt {
     text-align: center;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     right: 0;
     top: 50px;
@@ -298,21 +718,21 @@
 
 .bt-nt {
     margin: 50px;
-    width: 200px;
-    position: relative;
+    /* width: 200px;
+    position: relative; */
 }
 
 .bt-life {
     margin: 50px;
-    width: 200px;
-    position: relative;
+    /* width: 200px;
+    position: relative; */
 }
 
 
 .decor-x {
     margin: 50px;
     display: flex;
-    align-content: center;
+    /* align-content: center; */
 }
 
 .line-group {
@@ -320,7 +740,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 250px;
+    
 }
 
 .white {
@@ -332,7 +752,7 @@
 }
 
 .white p {
-    width: 50px;
+    /* width: 50px; */
     font-size: 20px;
     margin: auto;
 }
@@ -342,4 +762,3 @@
     width: 300px;
     height: 0.1px;
 }
-

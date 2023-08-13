@@ -28,7 +28,9 @@ form {
 .form-acti {
     margin-bottom: 15px;
 }
-
+ .sex{
+    display: flex;
+ }
 
 label {
     display: block;
@@ -48,22 +50,141 @@ input[type="text"] {
     font-size: 16px;
 }
 
-
-img {
-    vertical-align: middle;
-    margin-left: 10px;
+input[type="radio"] {
+    margin: 0 5px;
 }
 
-button {
-    background-color: #84AA6D;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
 ::placeholder{
     color:#fff;
+}
+
+
+@media screen and (max-width: 480px) {
+    html {
+        background-image: none;
+    }
+
+    .main {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    header {
+        /* width: 100%; */
+        height: 60px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #84AA6D;
+        position: relative;
+    }
+
+    .indexlogo {
+        display: none;
+    }
+
+    .phonelogo {
+        display: block;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    .logo img {
+
+        padding: 5px;
+        /* box-sizing: border-box;
+         background-color: #fff;
+         border-radius: 50%; */
+    }
+
+    .hb {
+        height: 40px;
+
+    }
+
+    nav {
+        position: absolute;
+        width: 80%;
+        height: calc(100vh - 60px);
+        /* margin:  5% 0; */
+        z-index: 1;
+        background-color: #eee;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        /* display: none; */
+        translate: 100% 0%;
+        transition: 1s;
+        opacity: 0;
+    }
+
+
+    .main nav a {
+        font-size: 24px;
+        padding: 20px 0;
+        color: #4E4B4B;
+    }
+
+    nav a:hover {
+
+        color: #fff;
+        background-color: #4E4B4B;
+        transition: 1s;
+        opacity: 0.5;
+
+    }
+
+    nav a+a {
+        border-top: 1px solid #fff;
+    }
+
+    /* 在checkbox被點擊後 .main-header的mainnav要flex */
+    #menu-switch:checked+.main nav {
+        /* display: flex; */
+        translate: 20% 0%;
+        opacity: 1;
+    }
+
+    .hb span:nth-child(1) {
+        /* 位移 */
+        translate: 0px -10px;
+        /* 角度 */
+        rotate: 0deg;
+        transition: tranlate 1s 1s,
+            rotate 1s 0s;
+    }
+
+    .hb span:nth-child(2) {
+        /* 透明度 */
+        opacity: 1;
+        transition: tranlate 1s 1s,
+            rotate 1s 2s;
+    }
+
+    .hb span:nth-child(3) {
+        translate: 0px 10px;
+        rotate: 0deg;
+        transition: tranlate 1s 1s,
+            rotate 1s 0s;
+    }
+
+    .container {
+        width: 85%;
+        margin: auto;
+        display: block;
+
+    }
+    form {
+        width: auto;
+        margin: 50px 0;
+        padding: 30px 20px;
+
+    }
+
+
 }

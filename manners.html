@@ -6,129 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員資料</title>
     <link rel="stylesheet" href="css/manners.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/login.js"></script>
 </head>
 
 <body>
-
-    <header class="main-header">
-        <div class="logo">
-            <a href="index.html"><img src="image/f2.svg" alt="logo"></a>
-        </div>
-        <nav>
-            <a href="about.html">關於我們</a>
-            <a href="activity.html">課程活動</a>
-            <a href="teachers.html">師資介紹</a>
-            <a href="application.html">報名資訊</a>
-            <a href="logoin.html">會員登入</a>
-        </nav>
-    </header>
-
-    <div class="container">
-        <form class="form-group">
-            <div class="form-acti">
-                <label for="name">姓名:</label>
-                <input type="text" id="name" name="name" required>
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main">
+        <header>
+            <div class="logo">
+                <a class="indexlogo" href="index.html"><img src="image/logo.svg" alt="logo"></a>
+                <a class="phonelogo" href="index.html"><img src="image/logo2.png" alt="logo"></a>
             </div>
 
-            <div class="form-acti sex">
-                <label>性別:</label>
-                <input type="radio" id="male" name="gender" value="男" required>
-                <label for="male">男</label>
-                <input type="radio" id="female" name="gender" value="女" required>
-                <label for="female">女</label>
-                <input type="radio" id="nomean" name="gender" value="不公開" required>
-                <label for="nomean">不公開</label>
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
 
-            <div class="form-acti">
-                <label for="birthday">生日:</label>
-                <input type="date" id="birthday" name="birthday" required>
-            </div>
-
-            <div class="form-acti">
-                <label for="">身分證(保險用):</label>
-                <input id="" type="text" minlength="10" maxlength="10">
-            </div>
-
-            <div class="form-acti">
-                <label for="address">地址:</label>
-                <textarea id="address" name="address" rows="4" required></textarea>
-            </div>
-
-            <div class="form-acti">
-                <label for="">緊急聯絡人:</label>
-                <input id="" type="text">
-            </div>
-
-            <div class="form-acti">
-                <label for="verification">驗證碼:</label>
-                <input type="text" id="verification" name="verification" required>
-                <img src="image/number.jpg" alt="驗證碼">
-            </div>
-            <div class="form-acti">
-            <button type="submit">提交</button>
-            </div>
-        </form>
-
-
-        <div class="notice">
-
+            <nav>
+                <a href="about.html">關於我們</a>
+                <div class="clabtn">
+                    <a href="activity.html">課程活動</a>
+                    <div class="apbtn">
+                        <a href="application.html">報名資訊</a>
+                    </div>
+                </div>
+                <a href="teachers.html">師資介紹</a>
+                <a href="login.html">會員登入</a>
+            </nav>
+        </header>
+    
+        <div class="container">
             <div class="title-photo">
-                <h2>森森夏日浪漫星空</h2>
-                <img src="image/starsky.jpg" >
+                <h2>森森夏日浪漫星空報名表</h2>
             </div>
+            <form class="form-group">
+                <div class="form-acti">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <h2>注意事項：</h2>
-            <ul>
-            <li>★本次活動將會拍攝照片，
-                作為本中心撰寫報告與未來宣傳活動使用，
-                參加視同同意拍攝照片。</li>
-                
-                <li>★如臨時有事，無法參與活動，需要退費，
-                請見下方說明：</li>
-                
-                <li>一、6月17日-24日申請取消參加：
-                不退費，可找有意願的朋友更換，
-                最晚須於活動前3日來電或來信告知。</li>
-                
-                <li>二、因不可抗力因素需申請取消參加：
-                如遇天災或事變等不可抗力之因素
-                (如重大傳染疾病等)，
-                向中心提出取消參加，經中心判定，
-                需提供相關資料，將扣除匯款手續費，
-                其餘退還。</li>
-            </ul>
+                <div class="form-acti sex">
+                    <label>性別:</label>
+                    <input type="radio" id="male" name="gender" value="男" required>
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="gender" value="女" required>
+                    <label for="female">女</label>
+                    <input type="radio" id="nomean" name="gender" value="不公開" required>
+                    <label for="nomean">不公開</label>
+                </div>
 
-            <label class="read">
-                <input type="checkbox" name="agreement" required>我已詳細閱讀，並同意上述事項
-            </label>
+                <div class="form-acti">
+                    <label for="birthday">生日:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
 
-         
+                <div class="form-acti">
+                    <label for="">身分證(保險用):</label>
+                    <input id="" type="text" minlength="10" maxlength="10">
+                </div>
 
+                <div class="form-acti">
+                    <label for="address">地址:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-acti">
+                    <label for="">緊急聯絡人:</label>
+                    <input id="" type="text">
+                </div>
+
+                <div class="form-acti">
+                    <label for="verification">驗證碼:</label>
+                    <div id="verification-code"></div>
+                    <input type="text" id="entered-code"  placeholder="輸入隨機碼">
+                    <p id="message"></p>
+                </div>
+                <div class="form-acti">
+                    <button type="submit"  id="verify-button">提交</button>
+                </div>
+            </form>
+            <div class="notice">
+               
+
+                <h2>注意事項：</h2>
+                <ul>
+                <li>★本次活動將會拍攝照片，
+                    作為本中心撰寫報告與未來宣傳活動使用，
+                    參加視同同意拍攝照片。</li>
+                    
+                    <li>★如臨時有事，無法參與活動，需要退費，
+                    請見下方說明：</li>
+                    
+                    <li>一、6月17日-24日申請取消參加：
+                    不退費，可找有意願的朋友更換，
+                    最晚須於活動前3日來電或來信告知。</li>
+                    
+                    <li>二、因不可抗力因素需申請取消參加：
+                    如遇天災或事變等不可抗力之因素
+                    (如重大傳染疾病等)，
+                    向中心提出取消參加，經中心判定，
+                    需提供相關資料，將扣除匯款手續費，
+                    其餘退還。</li>
+                </ul>
+
+                <label class="read">
+                    <input type="checkbox" name="agreement" required>我已詳細閱讀，並同意上述事項
+                </label>
+            </div>
         </div>
-        
     </div>
-
     <footer class="footer-group">
-        <ul class="nav-bottom">
-            <li class="nav-item">
-                <a href="#" class="nav-link">聯絡我們</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">常見問題</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">相關報導</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">社群</a>
-            </li>
-        </ul>
-
+        <div class="nav-bottom">
+            <div class="treebird">
+                <img src="image/tree1.png">
+            </div>
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
+            <div class="nav-item">
+                <h3>關於我們</h3>
+                <ul class="wh">
+                    <li><a href="#">創辦理念</a></li>
+                    <li><a href="#">師資介紹</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>活動課程</h3>
+                <ul>
+                    <li><a href="#">最新活動</a></li>
+                    <li><a href="#">報名資訊</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>聯絡我們</h3>
+                <ul class="whbg">
+                    <li>
+                        <p>社群
+                          <i class="fa-brands fa-facebook" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-instagram" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-twitter" style="color: #bc8660;"></i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>客服電話:03-0814000</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
+            <div class="treebird">
+                <img src="image/tree1.png">
+            </div>
+        </div>
     </footer>
+    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+    <script src="js/activity.js"></script>
 </body>
 
 </html>

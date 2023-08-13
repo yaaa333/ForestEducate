@@ -4,18 +4,7 @@ fontAwesomeScript.crossOrigin = "anonymous";
 document.head.appendChild(fontAwesomeScript);
 
 
-
-
-//$(document).ready(function(){ //因為ready是事件所以後面有function
-//    $('.fa-star').click(function(){
-//      $(this).css('color', 'red');
-//    })
-//})
- 
-
-
-
-
+//大小圖點擊輪播
 function showLarge(e) {
 
     document.getElementById("large").src = e.target.src;
@@ -31,22 +20,22 @@ function init() {
 
 
 
-var selectedStar = 0; // 记录当前点击的星星数量
+var selectedStar = 0; // 點擊的星星数量
 
 function rateStar(num) {
-    selectedStar = num; // 更新当前点击的星星数量
+    selectedStar = num; // 更新點擊的星星数量
     var stars = document.querySelectorAll('.fa-star');
     for (var i = 0; i < stars.length; i++) {
         if (i < num) {
-            stars[i].style.color = '#ffaa00'; // 将当前及之前的星星变成蓝色
+            stars[i].style.color = '#ffaa00'; //將當前跟之前的星星變黃
         } else {
-            stars[i].style.color = 'gray'; // 将剩余的星星变回灰色
+            stars[i].style.color = 'gray'; // 剩下的星星變回灰色
         }
     }
 }
 
 function highlightStar(num) {
-    if (selectedStar === 0) { // 只有在没有点击过星星时才会变色
+    if (selectedStar === 0) { // 只有在沒有點擊星星時才會變色
         var stars = document.querySelectorAll('.fa-star');
         for (var i = 0; i < stars.length; i++) {
             if (i < num) {
@@ -68,6 +57,61 @@ function resetStars() {
 
 
 
+//輪播
+
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = index % slides.length;
+    slides[currentSlide].style.display = 'block';
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+showSlide(0);
+setInterval(nextSlide, 3000); 
+
+
+//鳥飛
+$(document).ready(function () {
+    $(".birdfly").click(function () {
+        $(this).hide();
+    });
+});
+
+
+//樹
+const eggsk = document.querySelectorAll('.treebird img');
+                 
+eggsk.forEach(eggsk => {
+    eggsk.addEventListener('mouseover', () => {
+        eggsk.classList.add('shake');
+    });
+
+    eggsk.addEventListener('mouseout', () => {
+        eggsk.classList.remove('shake');
+    });
+});
+
+//按鈕閃爍
+const discountButton = document.getElementById('discountButton');
+discountButton.classList.add('blinking');         
+
+//字消失
+const textarea = document.getElementById('pword');
+
+textarea.addEventListener('focus', () => {
+    textarea.removeAttribute('placeholder');
+});
+
+textarea.addEventListener('blur', () => {
+    if (!textarea.value) {
+        textarea.setAttribute('placeholder', '分享您的心得，讓更多人知道!');
+    }
+});
 
 
 

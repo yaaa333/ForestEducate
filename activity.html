@@ -6,30 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>活動課程</title>
     <link rel="stylesheet" href="css/activity.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    
 </head>
 
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="main">
         <header>
             <div class="logo">
-                <a href="index.html"><img src="image/f2.svg" alt="logo"></a>
+                <a class="indexlogo" href="index.html"><img src="image/logo.svg" alt="logo"></a>
+                <a class="phonelogo" href="index.html"><img src="image/logo2.png" alt="logo"></a>
             </div>
-            <nav class="navbar">
+
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <nav>
                 <a href="about.html">關於我們</a>
-                <a href="activity.html">課程活動</a>
+                <div class="clabtn">
+                    <a href="activity.html">課程活動</a>
+                    <div class="apbtn">
+                        <a href="application.html">報名資訊</a>
+                    </div>
+                </div>
                 <a href="teachers.html">師資介紹</a>
-                <a href="application.html">報名資訊</a>
-                <a href="logoin.html">會員登入</a>
+                <a href="login.html">會員登入</a>
             </nav>
         </header>
         <div class="list-group">
+            <div id="acttitle"><img src="image/aptit.jpg" ></div>
             <div class="hashtag-group">
                 <div>
-                    <a href="#">#親子</a>
-                    <a href="#">#生活</a>
-                    <a href="#">#自然</a>
-                    <a href="#">#溪河</a>
-                    <a href="#">#山林</a>
+                    <a class="pick-button" data-category="family">#親子</a>
+                    <a class="pick-button" data-category="life">#生活</a>
+                    <a class="pick-button" data-category="nature">#自然</a>
+                    <a class="pick-button" data-category="river">#溪河</a>
+                    <a class="pick-button" data-category="mountain">#山林</a>
                 </div>
             </div>
 
@@ -37,7 +55,7 @@
                 <a href="#top"><img src="image/whbird.png" class="page-top-btn" ></img>回到頂部</a></div>
 
             <div class="list">
-                <div class="card lalasan">
+                <div class="card lalasan item" data-categories="nature">
                     <div class="pic-group">
                         <div class="pic">
                             <img src="image/forest2.jpg">
@@ -69,7 +87,7 @@
 
                     </div>
                 </div>
-                <div class="card owl">
+                <div class="card owl item" data-categories="mountain">
                     <div class="pic-group">
                         <div class="pic">
                             <img src="image/owl.jpg">
@@ -98,7 +116,7 @@
                         <a class="button" href="#">報名資訊</a>
                     </div>
                 </div>
-                <div class="card starsky">
+                <div class="card starsky item" data-categories="mountain">
                     <div class="pic-group">
                         <div class="pic">
                             <img src="image/starsky2.jpg">
@@ -141,24 +159,24 @@
 
         <div class="lesson-group">
 
-            <div class="item farm">
+            <div class="item-show farm">
                 <a href="#"><img src="image/Squirrel.jpg"></a>
                 <p>夏日農家樂</p>
             </div>
 
-            <div class="item">
+            <div class="item-show">
                 <a href="#"><img src="image/wflower.jpg"></a>
                 <p>鮮少的溫柔</p>
             </div>
-            <div class="item">
+            <div class="item-show">
                 <a href="#"><img src="image/monkey.jpg"></a>
                 <p>台灣寶可夢</p>
             </div>
-            <div class="item">
+            <div class="item-show">
                 <a href="#"><img src="image/owl2.jpg"></a>
                 <p>山中精靈的守護</p>
             </div>
-            <div class="item">
+            <div class="item-show">
                 <a href="#"><img src="image/forest2.jpg"></a>
                 <p>悠活踏步走</p>
             </div>
@@ -167,6 +185,12 @@
 
     <footer class="footer-group">
         <div class="nav-bottom">
+            <div class="treebird">
+                <img src="image/tree1.png">
+            </div>
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
             <div class="nav-item">
                 <h3>關於我們</h3>
                 <ul class="wh">
@@ -184,14 +208,29 @@
             <div class="nav-item">
                 <h3>聯絡我們</h3>
                 <ul class="whbg">
-                    <li><p>客服電話</p></li>
-                    <li><a href="#">社群</a></li>
+                    <li>
+                        <p>社群
+                          <i class="fa-brands fa-facebook" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-instagram" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-twitter" style="color: #bc8660;"></i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>客服電話:03-0814000</p>
+                    </li>
                 </ul>
+            </div>
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
+            <div class="treebird">
+                <img src="image/tree1.png">
             </div>
         </div>
     </footer>
-    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
-    
+    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+   <script src="js/activity.js"></script>
+
 </body>
 
 </html>

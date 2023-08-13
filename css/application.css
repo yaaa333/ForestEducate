@@ -1,10 +1,11 @@
 @import url('headfoot.css');
 
-h1{
+
+h1 {
     margin: 0 0 20px 0;
 }
 
-h2{
+h2 {
     margin: 5px 0;
 }
 
@@ -22,21 +23,51 @@ h2{
     display: flex;
     flex-direction: column;
     margin: 10px 0 0 120px;
-    
+
 }
 
-#curPos{
+#curPos {
     margin: 80px 0 50px 0;
 }
 
 .slider-container {
-    height: 400px;
-    /* padding-left: 20px; */
+  
     display: flex;
     align-items: center;
 
 }
 
+.item {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.big-image {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(70vh) translateY(-100vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(40vh) translateY(-200vh);
+        opacity: 0;
+    }
+}
 
 .big-image {
     width: 650px;
@@ -47,6 +78,7 @@ h2{
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 .big-image img {
     width: 100%;
@@ -97,13 +129,18 @@ h2{
 .container {
 
     display: grid;
-    grid-template-columns: 4fr 1fr 1.3fr;
+    grid-template-columns: 3fr 1fr 1.3fr;
     grid-template-rows: 1fr 5fr;
     gap: 10px;
 
 }
 
 
+.explain {
+    /* padding: 20px;
+    display: flex; */
+
+}
 
 .fsttit {
     grid-column: 1 / span 3;
@@ -113,22 +150,22 @@ h2{
 }
 
 .icon-group {
-    margin:  10px 0;
+    margin: 10px 0;
     display: flex;
     align-items: center;
 
 }
 
 .oneday {
-    
+
     display: flex;
- 
-      
+
+
 }
 
 .oneday img {
     height: 20px;
-    color:#B1E392;
+    color: #B1E392;
 }
 
 .oneday p {
@@ -155,30 +192,50 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 }
 
 .button P {
-    color: #75523A;
+    width: 135px;
+    color: #ffaa00;
     font-size: 30px;
+    font-weight: 600;
     text-align: center;
-
-
 }
 
-.button a {
+.button a:nth-last-child(1) {
     width: 80%;
     height: auto;
     padding: 10px 0;
     display: block;
     text-align: center;
-    color: #75523A;
+    color: #fff;
     border-radius: 10px;
-    background-color: #B1E392;
+    background-color: #84AA6D;
     border: 1px solid #D9D9D9;
 }
-ul{
-   margin-left:20px;
+.button a:nth-last-child(1):hover {
+    color: #84AA6D;
+    background-color: #fff;
+}
+
+.button .blinking {
+    animation: blinkingAnimation 2s linear infinite;
+}
+
+@keyframes blinkingAnimation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.button span{
+    font-size: 14px;
+    color: #75523A;
+    display: inline-block;
 }
 
 .line-short {
@@ -213,7 +270,8 @@ table {
     border-collapse: collapse;
 }
 
-th,td {
+th,
+td {
     padding: 8px;
     text-align: center;
 }
@@ -301,26 +359,33 @@ h2 {
 .location-card {
     height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     border-radius: 10px;
-    border: 1px solid #84AA6D;
 }
 
 .location-card p {
     text-align: start;
 }
 
-#name{
-    width: 80px; 
+#name {
+    width: 80px;
     height: 20px;
+    border: 0;
+    border: 1px solid #84AA6D;
 }
 
-input,textarea{
-    color:#fff;
-    background-color: #84AA6D;
+input,
+textarea {
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #4E4B4B;
     border-radius: 4px;
     font-size: 16px;
+}
+textarea:focus {
+    outline: none; 
 }
 
 button {
@@ -331,7 +396,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #84AA6D;
-    color: white;
+    color: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -342,20 +407,19 @@ button {
 }
 
 .caution-card {
-    width: 500px;
+    width: 550px;
     text-align: start;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
-textarea{
+textarea {
     width: 100%;
     border: transparent;
-    color:#fff;
 }
 
 ::placeholder {
-    color: #fff;
+    color: #84AA6D;
 }
 
 .userline {
@@ -374,9 +438,9 @@ textarea{
     margin-top: -30px
 }
 
-.fa-star{
-    color:gray;
-    margin: 10px 0;
+.fa-star {
+    color: gray;
+    margin: 10px 3px;
 }
 
 .staricon {
@@ -390,94 +454,240 @@ textarea{
     display: flex;
 }
 
-.hb label {
-    width: 40px;
-    height: 40px;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    position: relative;
-}
-
-.hb span {
-    width: 80%;
-    height: 4px;
-    background-color: #f00;
-    /* 漢堡做動畫先定位 */
-    position: absolute;
-    inset: 0;
-    margin: auto;
-}
 
 
-#menu-switch {
-    display: none;
-}
-
-/* 這裡是平板區小於767 */
-@media screen and (max-width: 767px) {
-    nav {
-        /* position: absolute; */
-        width: 90%;
-        margin: 0 5%;
-        background-color: #fa0;
-        top: 100%;
-        left: 0;
-        flex-direction: column;
+/* 這裡是手機區小於480 */
+@media screen and (max-width: 480px) {
+    html {
+        background-image: none;
+     }
+     body{
+        padding-bottom: 130px;
+     }
+     .main {
+         width: 100%;
+         display: block;
+         overflow: hidden;
+     }
+ 
+     header {
+         /* width: 100%; */
+         height: 60px;
+         display: flex;
+         justify-content: end;
+         align-items: center;
+         padding: 10px;
+         border-bottom:1px solid #84AA6D;
+         position: relative;
+     }
+ 
+     .indexlogo{
+        display: none;
+     }
+     .phonelogo{
+        display: block;
+     }
+     .logo {
+         margin: 0 auto;
+         width: 20%;
+     }
+ 
+     .logo img {
+      
+         padding: 5px;
+         /* box-sizing: border-box;
+         background-color: #fff;
+         border-radius: 50%; */
+     }
+ 
+     .hb {
+         height: 40px;
+ 
+     }
+ 
+     nav {
+         position: absolute;
+         width: 80%;
+         height: calc(100vh - 60px);
+         /* margin:  5% 0; */
+         z-index: 1;
+         background-color: #eee;
+         top: 100%;
+         left: 0;
+         flex-direction: column;
+         /* display: none; */
+         translate: 100% 0%;
+         transition: 1s;
+         opacity: 0;
+     }
+ 
+ 
+     .main nav a {
+         font-size: 24px;
+         padding: 20px 0;
+         color: #4E4B4B;
+     }
+ 
+     nav a:hover {
+ 
+         color: #fff;
+         background-color: #4E4B4B;
+         transition: 1s;
+         opacity: 0.5;
+ 
+     }
+ 
+     nav a+a {
+         border-top: 1px solid #fff;
+     }
+ 
+     /* 在checkbox被點擊後 .main-header的mainnav要flex */
+     #menu-switch:checked+.main nav {
+         /* display: flex; */
+         translate: 20% 0%;
+         opacity: 1;
+     }
+ 
+     .hb span:nth-child(1) {
+         /* 位移 */
+         translate: 0px -10px;
+         /* 角度 */
+         rotate: 0deg;
+         transition: tranlate 1s 1s,
+             rotate 1s 0s;
+     }
+ 
+     .hb span:nth-child(2) {
+         /* 透明度 */
+         opacity: 1;
+         transition: tranlate 1s 1s,
+             rotate 1s 2s;
+     }
+ 
+     .hb span:nth-child(3) {
+         translate: 0px 10px;
+         rotate: 0deg;
+         transition: tranlate 1s 1s,
+             rotate 1s 0s;
+     }
+ 
+    .only,.thrle{
         display: none;
     }
+     /* #large{
+        display: none;
+     }
+     .small-images {
+        width: auto;
+     } */
+     #smallPanel {
+        /* opacity: 0; */
+        /* flex-direction:unset;
+        margin-left: auto; */
+         display: none;
+     }
+     .slider {
+        margin: 10px 30px;
 
-
-    nav a+a {
-        border-top: 1px solid #fff;
     }
 
-    /* 在checkbox被點擊後 .main-header的mainnav要flex */
-    #menu-switch:checked +.main nav {
-        display: flex;
+    #curPos {
+        margin: 0 0 30px 0;
     }
 
-    .hb span:nth-child(1) {
-        /* 位移 */
-        translate: 0px -10px;
-        /* 角度 */
-        rotate: 0deg;
-        transition: tranlate 1s 1s,
-            rotate 1s 0s;
+    .slider-container {
+        height: auto;
+        /* width: 400px; */
     }
 
-    .hb span:nth-child(2) {
-        /* 透明度 */
-        opacity: 1;
-        transition: tranlate 1s 1s,
-                    rotate 1s 2s;
+    .container {
+        grid-template-columns: 2fr 0fr;
+        grid-template-rows: 1fr 5fr;
     }
 
-    .hb span:nth-child(3) {
-        translate: 0px 10px;
-        rotate: 0deg;
-        transition: tranlate 1s 1s,
-            rotate 1s 0s;
-    }
+    /* .page-top-btn{
+        z-index: 0;
+    } */
+    .big-image {
+        height: auto;
     }
 
-     /* 以下是桌機模式 漢堡不見 nav橫排 */
-     @media screen and (min-width: 768px) {
-        .hb {
-            display: none;
-        }
-
-        nav {
-            flex-direction: row;
-        }
-    } 
-
-    /* 大於768的時候同時有觸摸這個動作 就執行 */
-    @media screen and (min-width: 768px) and (hover:hover) {
-        nav a:hover {
-            color: #f00; 
-        }
+    .button {
+        /* display: none; */
+        position: fixed;
+        left: 0;
+        right: 0;
+        background: #fff;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 2;
     }
+    .button span{
+        margin-top: 15px;
+    }
+
+    .list-bar {
+       display: none;
+    }
+
+    ul {
+        width: 100px;
+    }
+
+    th {
+        padding: 0;
+        width: 330px;
+    }
+
+    tbody {
+        /* width: 50%; */
+    }
+
+    .spot {
+        width: 100%;
+    }
+
+    .info-ul {
+        width: 300px;
+    }
+
+    .info-img {
+        width: 100%;
+    }
+
+    .time-info-title {
+        width: 100%;
+        display: block;
+    }
+
+    .time {
+        width: 100px;
+    }
+
+    .txt {
+        text-align: start;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .caution-card {
+        width: 100%;
+        padding: 5px;
+    }
+    .score {
+        width: 100%;
+    }
+
+    button{
+        margin: 10px auto;
+        width: 100%;
+    }
+
+
+
+}
+
+

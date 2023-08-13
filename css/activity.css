@@ -1,12 +1,6 @@
 @import url('headfoot.css');
 
 
-.navbar {
-    display: block;
-    margin: 0px 20px;
-    width: 110px;
-}
-
 .navbar a {
     display: flex;
     padding: 8px 20px;
@@ -14,17 +8,16 @@
 }
 
 .hashtag-group {
+    margin: 0 0 -50px 0;
     display: flex;
     justify-content: center;
-    margin-top:20px;
 }
 
 .hashtag-group a {
     display: inline-block;
     margin: 10px;
-    width: 80px;
-    height: 20px;
-    padding: 10px 10px 15px 10px;
+    width: 60px;
+    padding: 6px 10px;
     text-align: center;
     border: 1px solid #84AA6D;
     border-radius: 50px;
@@ -38,12 +31,12 @@
 }
 
 .list-group {
-    margin: 120px 0 0 120px;
+    width: 85%;
 }
 
 .list {
     width: 100%;
-    margin: 30px;
+    margin: 50px ;
 }
 
 .list .card:nth-child(2) {
@@ -61,20 +54,19 @@
     display:inline-block;
 }
 
-
 .owl:nth-child(2) h2 {
        top:70%;
       }
 
 .card {
     width: 100%;
-    margin: 100px 0;
+    margin: 80px 0;
     display: flex;
     justify-content: center;
 }
 
 .pic-group {
-    width: 40%;
+    width: 32%;
     height:340px;
     position: relative;
 }
@@ -87,37 +79,35 @@
     top: 60%; 
     padding: 10px;
     line-height:70px;
-    position: absolute;
     text-align:center;
-    color: #4E4B4B;;
+    position: absolute;
+    color: #fff;
+    text-shadow: 0 0 1px black;
     background-color: #fff8;
 }
 
 .card .pic img {
     width: 100%;
     border-radius: 30px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-   
-    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);     
 }
 
 .card .txt {
     box-sizing: border-box;
     padding-left: 20px;
-    font-size: 16px;
-    
+    font-size: 16px;  
 }
 
 .button {
     width: 120px;
-    padding: 15px 20px;
+    padding: 8px 0;
     margin-top: 30px;
     margin-left: auto;
     display: block;
     text-align: center;
     background-color: #84AA6D;
     border-radius: 50px;
-    font-size: 26px;
+    font-size: 20px;
     color: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -129,11 +119,9 @@
 }
 
 .line-group {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-left: 280px;
-
 }
 
 .white {
@@ -141,7 +129,6 @@
     height: 100px;
     display: flex;
     justify-content: center;
-
 }
 
 .white p {
@@ -157,61 +144,190 @@
 }
 
 .lesson-group {
-  
     display: flex;
     justify-content: center;
-    margin: 100px 0 100px 100px;
+    margin: 60px 0;
 }
 
-.item {
+.item-show {
+    
     margin: 20px;
 }
 
-.item img {
+.item-show img {
     width: 180px;
+    margin: 20px; 
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.item p {
+.item-show p {
     text-align: center;
     margin: 10px 0;
 }
 
-footer {
+.item {
+    display: none;
+}
+.active {
     display: flex;
-    justify-content: center;
-    position: relative;
 }
 
 
-.nav-bottom {
-    width:100%;
-     height: 300px;
-     border-top: 2px solid #84AA6D;
-     display: flex;
-    align-items: center;
-     justify-content: center;
-     list-style: none;
-}
+@media screen and (max-width: 480px) {
+    html {
+        background-image: none;
+    }
 
-.nav-item {
-    text-align:center;
-}
+    .main {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
 
-ul{
- background-color:#fff;
- width:200px;
- text-align:center;
+    header {
+        height: 60px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #84AA6D;
+        position: relative;
+    }
 
-}
+    .indexlogo {
+        display: none;
+    }
 
-.nav-item a {
-    text-decoration: none;
-    margin: 10px;
-    
-   
-}
-.tibame{
-    text-align: center;
+    .phonelogo {
+        display: block;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    .logo img {
+        padding: 5px;
+    }
+
+    .hb {
+        height: 40px;
+    }
+
+    nav {
+        position: absolute;
+        width: 80%;
+        height: calc(100vh - 60px);
+        z-index: 1;
+        background-color: #eee;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        translate: 100% 0%;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .main nav a {
+        font-size: 24px;
+        padding: 20px 0;
+        color: #4E4B4B;
+    }
+
+    nav a:hover {
+
+        color: #fff;
+        background-color: #4E4B4B;
+        transition: 1s;
+        opacity: 0.5;
+    }
+
+    nav a+a {
+        border-top: 1px solid #fff;
+    }
+
+    /* 在checkbox被點擊後 .main-header的mainnav要flex */
+    #menu-switch:checked+.main nav {
+        /* display: flex; */
+        translate: 20% 0%;
+        opacity: 1;
+    }
+
+    .hb span:nth-child(1) {
+        /* 位移 */
+        translate: 0px -10px;
+        /* 角度 */
+        rotate: 0deg;
+        transition: tranlate 1s 1s,
+            rotate 1s 0s;
+    }
+
+    .hb span:nth-child(2) {
+        /* 透明度 */
+        opacity: 1;
+        transition: tranlate 1s 1s,
+            rotate 1s 2s;
+    }
+
+    .hb span:nth-child(3) {
+        translate: 0px 10px;
+        rotate: 0deg;
+        transition: tranlate 1s 1s,
+            rotate 1s 0s;
+    }
+    .list-group {
+        margin: 0;
+    }
+    .list {
+        margin: auto;
+    }
+    .hashtag-group a {
+        width: 68px;
+        height: auto;
+        margin: 2px;
+        padding: 6px 0;
+    }
+    .card{
+        width: 80%;
+        margin: 30px auto;
+        display: block;
+    }
+    .card .txt {
+        padding: 0;
+    }
+    .pic-group {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        position: unset
+    }
+
+    .pic-title h2{
+        position: unset;
+        color: unset;
+        background-color: unset;
+    }
+
+    .hashtag-group {
+        margin:0;
+    }
+
+    .list .card:nth-child(2) {
+        display: block;
+    }
+
+    .list .card:nth-child(2) .txt {
+        margin: 0;
+    }
+    .horizon {
+        margin: 50px 0;
+        width: 140px;
+    }
+    .item-show img {
+        width: 200px;
+    }
 }

@@ -13,28 +13,37 @@ html {
 
 }
 
-body{
+body,
+p {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-weight:400;
+    font-weight: 400;
     color:#4E4B4B;
+}
+
+#acttitle {
+    width: 30%;
+    margin: 80px auto 50px auto;
+}
+#acttitle img{
+    width: 100%;
 }
 
 .page-top-btn {
     width: 40px;
-  }
+}
 
-  .page-top-btn a{
+.page-top-btn a {
     width: 10px;
-    color:aqua
-  }
-  
-  .pagetop {
+    color: aqua
+}
+
+.pagetop {
     width: 40px;
     position: fixed;
-    bottom: 10%;
+    bottom: 16%;
     right: 2%;
-    z-index: 10;
-  }
+    z-index: 1;
+}
 
 
 .main {
@@ -51,13 +60,16 @@ a {
 
 .logo {
     width: 160px;
-    height: 250px;
+    margin: 80px 0 40px 0;
 }
 
 .logo img {
     width: 100%;
     display: inline-block;
-    margin: 80px 0;
+}
+
+.phonelogo {
+    display: none;
 }
 
 nav {
@@ -70,8 +82,83 @@ nav a {
     display: flex;
     padding: 8px 20px;
     justify-content: center;
+    box-sizing: border-box;
 }
 
+nav a:hover{
+    border:1px solid #84AA6D;
+    border-radius: 10px;
+}
+
+.apbtn a:hover{
+   
+    transform-origin: right center;
+    transition: .3s;
+    transform: perspective(200px) rotateY(0deg) translateZ(50px);
+}
+
+.clabtn{
+    position: relative;
+}
+.apbtn{
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: -90%;
+    top:45%
+    /* padding-top: 10px; */
+}
+
+.apbtn a{
+    display: block;
+    color: #fff;
+    background-color: #84AA6D ;
+    border-radius: 10px;
+    /* padding: 6px 10px; */
+  
+}
+.clabtn:hover .apbtn{
+    display: block;
+}
+
+#verification-code{
+    width: 55%;
+    color: #BC8660;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: end;
+
+}
+
+
+.eggsk {
+    position: relative;
+}
+
+.eggsk img {
+    /* max-width: 100%;
+    height: auto; */
+    transition: transform 0.3s ease-in-out;
+}
+
+.shake {
+    animation: 0.5s shake 0s;
+}
+
+@keyframes shake {
+
+    0%,100% {
+        transform: translateX(0);
+    }
+
+    10%,30%,50%,70%,90% {
+        transform: translateX(-5px);
+    }
+
+    20%,40%,60%,80% {
+        transform: translateX(5px);
+    }
+}
 
 
 footer {
@@ -82,32 +169,138 @@ footer {
 
 
 .nav-bottom {
-    width:100%;
-     height: 300px;
-     border-top: 2px solid #84AA6D;
-     display: flex;
+    width: 100%;
+    height: 200px;
+    border-top: 2px solid #84AA6D;
+    display: flex;
     align-items: center;
-     justify-content: center;
-     list-style: none;
+    justify-content: center;
+    list-style: none;
 }
 
 .nav-item {
-    text-align:center;
+    text-align: center;
 }
 
-ul{
- background-color:#fff;
- width:200px;
- text-align:center;
-
+ul {
+    background-color: #fff;
+    width: 200px;
+    
 }
 
 .nav-item a {
     text-decoration: none;
     margin: 10px;
-    
-   
+    color: #4E4B4B;
+
 }
-.tibame{
+
+.tibame {
     text-align: center;
+}
+
+.hb label {
+    width: 40px;
+    height: 40px;
+    background-color: #84AA6D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.hb span {
+    width: 80%;
+    height: 4px;
+    background-color: #fff;
+    /* 漢堡做動畫先定位 */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+#menu-switch {
+    display: none;
+}
+
+button {
+    width: 120px;
+    padding: 8px 0;
+    margin-top: 30px;
+    margin-left: auto;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #84AA6D;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.birdfly {
+    width: 10%;
+    opacity: 1; 
+    position: absolute;
+    bottom: 0;
+    animation: bounce 8s infinite;
+    }
+    .birdfly img{
+        width: 100%;
+    }
+    .treebird {
+        width: 15%;
+    }
+    .treebird img{
+        width: 80%;
+    }
+    .smtr {
+        width: 10%;
+    }
+
+@media screen and (max-width: 480px) {
+    .pagetop {
+        width: 40px;
+        position: fixed;
+        bottom: 16%;
+        right: 2%;
+        z-index: 1;
+    }
+    #acttitle {
+        width: 45%;
+        margin: 50px auto 25px auto;
+    }
+
+    ul {
+        width: 100px;
+    }
+
+    .nav-bottom {
+        width: auto;
+        height: 100px;
+    }
+}
+
+
+
+/* 以下是桌機模式 漢堡不見 nav橫排 */
+@media screen and (min-width: 768px) {
+    .hb {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+}
+
+/* 大於768的時候同時有觸摸這個動作 就執行 */
+@media screen and (min-width: 768px) and (hover:hover) {
+    nav a:hover {
+        /* color: #f00; */
+    }
 }

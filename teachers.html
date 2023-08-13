@@ -9,43 +9,56 @@
 </head>
 
 <body>
-   
+    <input type="checkbox" name="" id="menu-switch">
     <div class="main">
-
         <header>
             <div class="logo">
-                <a href="index.html"><img src="image/f2.svg" alt="logo"></a>
+                <a class="indexlogo" href="index.html"><img src="image/logo.svg" alt="logo"></a>
+                <a class="phonelogo" href="index.html"><img src="image/logo2.png" alt="logo"></a>
             </div>
-            <nav class="navbar">
+
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <nav>
                 <a href="about.html">關於我們</a>
-                <a href="activity.html">課程活動</a>
-                <a href="teachers.html">師資介紹</a>
-                <a href="application.html">報名資訊</a>
-                <a href="logoin.html">會員登入</a>
+                <div class="clabtn">
+                    <a href="activity.html">課程活動</a>
+                    <div class="apbtn">
+                        <a href="application.html">報名資訊</a>
+                    </div>
+                </div>
+                <a>師資介紹</a>
+                <a href="login.html">會員登入</a>
             </nav>
         </header>
-      
             <div class="container">
+                <div id="acttitle"><img src="image/ttit.jpg" ></div>
                 <div class="teacher-group">
                     <h1>幼兒教育專家</h1>
                     <div class="tcpart-group">
                         <div class="tcpart">
                             <img src="image/chuteacher1.jfif" alt="Education Expert 1">
                             <h2>Mandy Cho</h2>
-                            <p>國立台北教育大學 教育學系<br>
-                                國立台北政治大學 幼兒教育學系</p>
+                            <p>國立台中教育大學 幼兒教育學系<br>
+                                國立台中教育大學 幼兒教育碩士</p>
                         </div>
                         <div class="tcpart">
                             <img src="image/chuteacher2.jpg" alt="Education Expert 2">
                             <h2>Jacky Chen</h2>
-                            <p>國立台北教育大學 教育學系<br>
-                                國立台北政治大學 幼兒教育學系</p>
+                            <p>長庚科技大學 幼兒保育學士<br>
+                                國立台北政治大學 幼兒教育碩士</p>
                         </div>
                         <div class="tcpart">
                             <img src="image/chuteacher3.jpg" alt="Education Expert 3">
                             <h2>Peggy Lu</h2>
-                            <p>國立台北教育大學 教育學系<br>
-                                國立台北政治大學 幼兒教育學系</p>
+                            <p>國立台北教育大學 教育學士<br>
+                                國立清華大學 幼兒教育學碩士</p>
                         </div>
                     </div>
                 </div>
@@ -55,20 +68,19 @@
                     <div class="tcpart">
                         <img src="image/natteacher1.jpg" alt="Nature Expert 1">
                         <h2>Peggy Lu</h2>
-                        <p>國立台北教育大學 教育學系<br>
-                           國立台北政治大學 幼兒教育學系</p>
+                        <p>國立中興大學 森林學學士<br>
+                        國立台灣大學 生態學與演化生物學碩士 </p>
                     </div>
                     <div class="tcpart">
                         <img src="image/natteacher2.jpg" alt="Nature Expert 2">
                         <h2>Peggy Lu</h2>
-                        <p>國立台北教育大學 教育學系<br>
-                            國立台北政治大學 幼兒教育學系</p>
+                        <p>國立台灣大學<br>生物環境系統工程學士</p>
                     </div>
                     <div class="tcpart">
                         <img src="image/natteacher3.jpg" alt="Nature Expert 3">
                         <h2>Peggy Lu</h2>
-                        <p>國立台北教育大學 教育學系<br>
-                            國立台北政治大學 幼兒教育學系</p>
+                        <p>國立屏東科技大學 森林學士<br>
+                        國立台灣大學 森林環境暨資源學碩士</p>
                     </div>
                     </div>
                 </div>
@@ -76,37 +88,53 @@
 
     </div>
 
-        <footer class="footer-group">
-            <div class="nav-bottom">
-                <div class="nav-item">
-                    <h3>關於我們</h3>
-                    <ul class="wh">
-                        <li><a href="#">創辦理念</a></li>
-                        <li><a href="#">師資介紹</a></li>
-                    </ul>
-                </div>
-                <div class="nav-item">
-                    <h3>活動課程</h3>
-                    <ul>
-                        <li><a href="#">最新活動</a></li>
-                        <li><a href="#">報名資訊</a></li>
-                    </ul>
-                </div>
-                <div class="nav-item">
-                    <h3>聯絡我們</h3>
-                    <ul class="whbg">
-                        <li><p>客服電話</p></li>
-                        <li><a href="#">社群</a></li>
-                    </ul>
-                </div>
+    <footer class="footer-group">
+        <div class="nav-bottom">
+            <div class="treebird">
+                <img src="image/tree1.png">
             </div>
-        </footer>
-        <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
-        
-
-
-
-
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
+            <div class="nav-item">
+                <h3>關於我們</h3>
+                <ul class="wh">
+                    <li><a href="#">創辦理念</a></li>
+                    <li><a href="#">師資介紹</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>活動課程</h3>
+                <ul>
+                    <li><a href="#">最新活動</a></li>
+                    <li><a href="#">報名資訊</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>聯絡我們</h3>
+                <ul class="whbg">
+                    <li>
+                        <p>社群
+                          <i class="fa-brands fa-facebook" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-instagram" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-twitter" style="color: #bc8660;"></i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>客服電話:03-0814000</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
+            <div class="treebird">
+                <img src="image/tree1.png">
+            </div>
+        </div>
+    </footer>
+    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+    <script src="js/activity.js"></script>    
 </body>
 
 </html>

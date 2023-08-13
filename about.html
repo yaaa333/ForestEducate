@@ -9,29 +9,47 @@
 </head>
 
 <body>
+    <input type="checkbox" name="" id="menu-switch">
     <div class="main">
         <header>
             <div class="logo">
-                <a href="index.html"><img src="image/f2.svg" alt="logo"></a>
+                <a class="indexlogo" href="index.html"><img src="image/logo.svg" alt="logo"></a>
+                <a class="phonelogo" href="index.html"><img src="image/logo2.png" alt="logo"></a>
             </div>
+
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
             <nav>
                 <a href="about.html">關於我們</a>
-                <a href="activity.html">課程活動</a>
+                <div class="clabtn">
+                    <a href="activity.html">課程活動</a>
+                    <div class="apbtn">
+                        <a href="application.html">報名資訊</a>
+                    </div>
+                </div>
                 <a href="teachers.html">師資介紹</a>
-                <a href="application.html">報名資訊</a>
-                <a href="logoin.html">會員登入</a>
+                <a href="login.html">會員登入</a>
             </nav>
         </header>
+       
+       
 
-        
         <div class="pagetop">
-            <a href="#top"><img src="image/whbird.png" class="page-top-btn" ></img>回到頂部</a></div>
+            <a href="#top"><img src="image/whbird.png" class="page-top-btn"></img>回到頂部</a>
+        </div>
 
 
         <div class="about-group">
+            <div id="acttitle"><img src="image/abtit.jpg" ></div>
             <div class="twocl cir">
                 <div class="pic">
-                    <img src="image/bub.png">
+                    <img src="image/forest5.jpg">
                 </div>
                 <div class="txt">
                     <h2>森林育的誕生</h2>
@@ -43,13 +61,14 @@
                         為了打破被侷限的腦袋及冷漠的親子關係，<br>
                         為了重拾人們對環境的重視與生態的愛護，<br>
                         因此創設「森林育」<br>
-                        來幫助更多人深入了解自然的奧妙，同時維繫人與人之間的溫度。</p>
+                        來幫助更多人深入了解自然的奧妙，<br>
+                        同時維繫人與人之間的溫度。</p>
                 </div>
             </div>
             <p><span>「森林育」</span>顧名思義是以自然為意象的森林，與教育做結合。</p>
             <div class="twocl scr">
                 <div class="pic long">
-                    <img src="image/forest4.jpg">
+                    <img src="image/family.JPG">
                 </div>
                 <div class="txt">
                     90年起於全國各校開辦自然教育相關講座。<br>
@@ -63,16 +82,19 @@
             </div>
             <div class="twocl ssr">
                 <div class="pic long">
-                    <img src="image/kid.jpg">
+                    <img src="image/babys.jpg">
                 </div>
                 <div class="txt">
-                    90年起於全國各校開辦自然教育相關講座。<br>
-                    92年開辦第一場親子教育結合國家森林園區之活動。<br>
-                    92年起陸續啟動結合多元教育活動，與政府合作，推廣於全國民眾。<br>
-                    94年起與各地大專院校合作，提供專業師資進入校園推廣。<br>
-                    95年置辦暑期夏令營，與民間企業聯手舉辦愛心推廣營隊。<br>
-                    110年起邀請美國、日本專業教授開辦教育講座。<br>
-                    至今己有超過五萬名學童及成人受惠。<br>
+                    我們秉持著環境影響人的理念，致力於自然、生活與親子教育。<br>
+                    我們鼓勵孩子親近大自然，培養好奇心與探索欲，<br>
+                    從中汲取智慧與環保觀念。<br>
+                    此外， <br>
+                    注重培養實用生活技能，使孩子具備應對挑戰的能力。<br>
+                    親子參與被視為重要，<br>
+                    通過共同探索與學習，加深親子情感與理解。<br>
+                    在森林育，<br>
+                    自然、生活、親子交織，<br>
+                    培養出創造力與良好品性、善待環境的優秀孩子。<br>
                 </div>
             </div>
 
@@ -80,7 +102,7 @@
             <div class="founder-group">
                 <div class="founder">
                     <div class="fd-pic">
-                        <img src="image/founder1.jfif">
+                        <img src="image/kidth.jpg">
                     </div>
                     <div class="fd-txt">
                         <h2>創辦人 張巴特</h2>
@@ -91,7 +113,7 @@
                 <img class="x" src="image/x.svg">
                 <div class="founder">
                     <div class="fd-pic">
-                        <img src="image/founder2.jpg">
+                        <img src="image/natth.png">
                     </div>
                     <div class="fd-txt">
                         <h2>創辦人 周水晶</h2>
@@ -107,6 +129,12 @@
 
     <footer class="footer-group">
         <div class="nav-bottom">
+            <div class="treebird">
+                <img src="image/tree1.png">
+            </div>
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
             <div class="nav-item">
                 <h3>關於我們</h3>
                 <ul class="wh">
@@ -124,14 +152,28 @@
             <div class="nav-item">
                 <h3>聯絡我們</h3>
                 <ul class="whbg">
-                    <li><p>客服電話</p></li>
-                    <li><a href="#">社群</a></li>
+                    <li>
+                        <p>社群
+                          <i class="fa-brands fa-facebook" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-instagram" style="color: #bc8660;"></i>
+                          <i class="fa-brands fa-twitter" style="color: #bc8660;"></i>
+                        </p>
+                    </li>
+                    <li>
+                        <p>客服電話:03-0814000</p>
+                    </li>
                 </ul>
+            </div>
+            <div class="treebird smtr">
+                <img src="image/tree1.png">
+            </div>
+            <div class="treebird">
+                <img src="image/tree1.png">
             </div>
         </div>
     </footer>
-    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p> 
-    
+    <p class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+<script src="js/activity.js" ></script>
 </body>
 
 </html>
