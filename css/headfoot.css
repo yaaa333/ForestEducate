@@ -301,9 +301,3 @@ button {
     }
 }
 
-/* 大於768的時候同時有觸摸這個動作 就執行 */
-@media screen and (min-width: 768px) and (hover:hover) {
-    nav a:hover {
-        /* color: #f00; */
-    }
-}
