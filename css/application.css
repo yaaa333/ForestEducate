@@ -136,11 +136,7 @@ h2 {
 }
 
 
-.explain {
-    /* padding: 20px;
-    display: flex; */
 
-}
 
 .fsttit {
     grid-column: 1 / span 3;
@@ -638,10 +634,6 @@ textarea {
     th {
         padding: 0;
         width: 330px;
-    }
-
-    tbody {
-        /* width: 50%; */
     }
 
     .spot {
