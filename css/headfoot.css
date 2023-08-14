@@ -263,10 +263,13 @@ button {
     }
 
 @media screen and (max-width: 480px) {
+    .birdfly {
+        display: none;
+    }
     .pagetop {
         width: 40px;
         position: fixed;
-        bottom: 16%;
+        bottom: 20%;
         right: 2%;
         z-index: 1;
     }

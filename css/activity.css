@@ -332,6 +332,13 @@
         margin: 50px 0;
         width: 140px;
     }
+    .lesson-group{
+        flex-direction: column;
+        margin: 60px;
+    }
+    .item-show{
+        margin:auto;
+    }
     .item-show img {
         width: 200px;
     }
