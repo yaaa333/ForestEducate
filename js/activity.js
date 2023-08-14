@@ -55,4 +55,4 @@ eggsk.forEach(eggsk => {
     });
 });
 
-window.addEventListener("load", init, false);
+
