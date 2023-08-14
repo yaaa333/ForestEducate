@@ -91,7 +91,6 @@ nav a:hover{
 }
 
 .apbtn a:hover{
-   
     transform-origin: right center;
     transition: .3s;
     transform: perspective(200px) rotateY(0deg) translateZ(50px);
@@ -285,6 +284,50 @@ button {
     .nav-bottom {
         width: auto;
         height: 100px;
+    }
+    .apbtn{
+        width: 150px;
+        left: -20%;
+        top: 45%;
+        /* padding-top: 10px; */
+    }
+
+   
+    .apbtn a {
+        display: block;
+        text-align: center;
+        border: 1px solid #84AA6D;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+ 
+    label{
+        margin: 10px 0;
+        font-size: 24px;
+        flex-shrink: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        display: none;
+    }
+    /* .clabtn a:checked ~ .apbtn{
+        display: block;
+    } */
+    /* .apbtn a:checked{
+        display: block;
+        text-align: center;
+        border:1px solid #84AA6D;
+        border-radius: 10px;
+        transition: .3s;
+    } */
+    
+    
+    .treebird{
+        display: none;
     }
 }
 

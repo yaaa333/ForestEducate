@@ -236,12 +236,10 @@
 
     .main nav a {
         font-size: 24px;
-        padding: 20px 0;
         color: #4E4B4B;
     }
 
     nav a:hover {
-
         color: #fff;
         background-color: #4E4B4B;
         transition: 1s;
