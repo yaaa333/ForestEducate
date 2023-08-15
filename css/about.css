@@ -154,15 +154,6 @@ h2 {
         overflow: hidden;
     }
 
-    header {
-        height: 60px;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        padding: 10px;
-        border-bottom: 1px solid #84AA6D;
-        position: relative;
-    }
     .hb {
         height: 40px;
     }

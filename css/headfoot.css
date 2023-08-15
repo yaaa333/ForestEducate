@@ -266,6 +266,19 @@ button {
     }
 
 @media screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        display: flex;
+        /* justify-content: end; */
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #84AA6D;
+        position: fixed;
+        backdrop-filter: blur(10px);
+        z-index: 3;
+    }
+
 
     .indexlogo {
         display: none;
@@ -307,7 +320,7 @@ button {
     }
     #acttitle {
         width: 45%;
-        margin: 50px auto 25px auto;
+        margin: 108px auto 25px auto;
     }
 
     ul {

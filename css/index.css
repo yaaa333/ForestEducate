@@ -256,8 +256,7 @@ left: -10%;
         overflow: hidden;
     }
 
-    header {
-        /* width: 100%; */
+    /* header {
         height: 60px;
         display: flex;
         justify-content: end;
@@ -265,28 +264,7 @@ left: -10%;
         padding: 10px;
         border-bottom: 1px solid #84AA6D;
         position: relative;
-    }
-
-    .indexlogo {
-        display: none;
-    }
-
-    .phonelogo {
-        display: block;
-    }
-
-    .logo {
-        margin: 0 auto;
-        width: 20%;
-    }
-
-    .logo img {
-
-        padding: 5px;
-        /* box-sizing: border-box;
-         background-color: #fff;
-         border-radius: 50%; */
-    }
+    } */
 
     .hb {
         height: 40px;
@@ -297,13 +275,11 @@ left: -10%;
         position: absolute;
         width: 80%;
         height: calc(100vh - 60px);
-        /* margin:  5% 0; */
         z-index: 1;
         background-color: #eee;
         top: 100%;
         left: 0;
         flex-direction: column;
-        /* display: none; */
         translate: 100% 0%;
         transition: 1s;
         opacity: 0;
@@ -360,7 +336,7 @@ left: -10%;
     }
 
     .homepage-pic {
-        margin: 50px 20px 50px 30px;
+        margin: 150px 20px 50px 30px;
         text-align: center;
     }
 
@@ -396,7 +372,7 @@ left: -10%;
     }
 
     .phrase {
-        margin: 50px;
+        margin: 50px auto;
         text-align: center;
     }
 
@@ -522,8 +498,8 @@ left: -10%;
     }
 
     .line-group .horizon {
-        margin: 7px;
-        width: 140px;
+        margin: 15px;
+        width: 95px;
     }
 
     .true-group .bird-group {
@@ -545,9 +521,9 @@ left: -10%;
         overflow: hidden;
     }
     .recommend .txt-recom {
-        width: 500px;
+        width: 480px;
         height: 448px;
-        margin: -160px 0 0 -44px;
+        margin: -180px 0 0 -60px;
         background-size: cover;
     }
     .pic-person {
@@ -557,7 +533,7 @@ left: -10%;
     }
 
     .pic-person img {
-        width: 100%;
+        width: 85%;
     }
 
 }
