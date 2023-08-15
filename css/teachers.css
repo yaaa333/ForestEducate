@@ -85,27 +85,6 @@
         position: relative;
     }
 
-    .indexlogo {
-        display: none;
-    }
-
-    .phonelogo {
-        display: block;
-    }
-
-    .logo {
-        margin: 0 auto;
-        width: 20%;
-    }
-
-    .logo img {
-
-        padding: 5px;
-        /* box-sizing: border-box;
-         background-color: #fff;
-         border-radius: 50%; */
-    }
-
     .hb {
         height: 40px;
 
@@ -115,13 +94,11 @@
         position: absolute;
         width: 80%;
         height: calc(100vh - 60px);
-        /* margin:  5% 0; */
         z-index: 1;
         background-color: #eee;
         top: 100%;
         left: 0;
         flex-direction: column;
-        /* display: none; */
         translate: 100% 0%;
         transition: 1s;
         opacity: 0;

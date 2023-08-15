@@ -199,23 +199,6 @@
         display: block;
     }
 
-    .indexlogo {
-        display: none;
-    }
-
-    .phonelogo {
-        display: block;
-    }
-
-    .logo {
-        margin: 0 auto;
-        width: 20%;
-    }
-
-    .logo img {
-        padding: 5px;
-    }
-
     .hb {
         height: 40px;
     }
@@ -287,7 +270,7 @@
         margin: auto;
     }
     .hashtag-group a {
-        width: 68px;
+    
         height: auto;
         margin: 2px;
         padding: 6px 0;

@@ -7,7 +7,7 @@
 
 form {
     width: 400px;
-    margin:100px 100px 200px 200px;
+    margin:100px 200px ;
     padding:30px 50px;
     border: 1px solid #84AA6D;
     border-radius:15px;
@@ -17,17 +17,15 @@ form {
 
 .form-acti{
     padding-left:50px;
+    margin-bottom: 15px;
  }
 
 .container {
     display: flex;
     justify-content: center;
-    margin-left: 50px;
+
 }
 
-.form-acti {
-    margin-bottom: 15px;
-}
  .sex{
     display: flex;
  }
@@ -186,5 +184,21 @@ input[type="radio"] {
 
     }
 
+    .logtit{
+       text-align: center;
+    }
+
+    .form-acti{
+        padding: 0;
+    }
+    .form-acti label{
+        text-align: start;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 95%;
+    }
 
 }

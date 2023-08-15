@@ -467,7 +467,6 @@ textarea {
      }
  
      header {
-         /* width: 100%; */
          height: 60px;
          display: flex;
          justify-content: end;
@@ -475,25 +474,6 @@ textarea {
          padding: 10px;
          border-bottom:1px solid #84AA6D;
          position: relative;
-     }
- 
-     .indexlogo{
-        display: none;
-     }
-     .phonelogo{
-        display: block;
-     }
-     .logo {
-         margin: 0 auto;
-         width: 20%;
-     }
- 
-     .logo img {
-      
-         padding: 5px;
-         /* box-sizing: border-box;
-         background-color: #fff;
-         border-radius: 50%; */
      }
  
      .hb {
@@ -505,23 +485,13 @@ textarea {
          position: absolute;
          width: 80%;
          height: calc(100vh - 60px);
-         /* margin:  5% 0; */
-         z-index: 1;
          background-color: #eee;
          top: 100%;
          left: 0;
          flex-direction: column;
-         /* display: none; */
          translate: 100% 0%;
          transition: 1s;
          opacity: 0;
-     }
- 
- 
-     .main nav a {
-         font-size: 24px;
-         padding: 20px 0;
-         color: #4E4B4B;
      }
  
      nav a:hover {
@@ -601,20 +571,16 @@ textarea {
         grid-template-rows: 1fr 5fr;
     }
 
-    /* .page-top-btn{
-        z-index: 0;
-    } */
     .big-image {
         height: auto;
     }
 
     .button {
-        /* display: none; */
         position: fixed;
         left: 0;
         right: 0;
         background: #fff;
-        bottom: 0;
+        bottom: 0vh;
         width: 100%;
         box-sizing: border-box;
         z-index: 2;
@@ -677,7 +643,12 @@ textarea {
         margin: 10px auto;
         width: 100%;
     }
-
+     
+    label{
+        margin: 0;
+        font-size: 16px;
+        display: unset;
+    }
 
 
 }

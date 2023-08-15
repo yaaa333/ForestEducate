@@ -250,11 +250,6 @@ left: -10%;
     html {
         background-image: none;
     }
-
-    body {
-        /* padding-bottom: 130px; */
-    }
-
     .main {
         width: 100%;
         display: block;

@@ -134,9 +134,11 @@ h2 {
     margin-top: 200px;
 }
 
-.x img {
-    width: 100%;
-}
+
+ .xline {
+     display: none;
+     margin: auto;
+ }
 
 
 
@@ -161,24 +163,6 @@ h2 {
         border-bottom: 1px solid #84AA6D;
         position: relative;
     }
-
-    .indexlogo {
-        display: none;
-    }
-
-    .phonelogo {
-        display: block;
-    }
-
-    .logo {
-        margin: 0 auto;
-        width: 20%;
-    }
-
-    .logo img {
-        padding: 5px;
-    }
-
     .hb {
         height: 40px;
     }
@@ -297,11 +281,12 @@ h2 {
         margin: 25px 0 0 0;
     }
     .x {
-        margin: 0 0 30px 75px;
+       display: none;
     }
-    .founder:first-child{
-        margin-bottom: 50px;
+    .xline {
+        display: block;
     }
+   
     .fd-txt {
         margin:0 ;
     }
@@ -320,4 +305,10 @@ h2 {
         text-align: center;
     }
 
+    .txt {
+        hyphens: auto;
+    }
+    .txt br{
+        display: none;
+    }
 }

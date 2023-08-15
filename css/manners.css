@@ -52,7 +52,8 @@ input[type="radio"] {
 }
 
 .read {
-    margin-top: 50px;
+   font-size: 16px;
+   text-align: start;
 }
 
 
@@ -129,7 +130,6 @@ input[type="radio"] {
 
 img {
     vertical-align: middle;
-    margin-left: 10px;
 }
 
 
@@ -157,49 +157,23 @@ img {
         position: relative;
     }
 
-    .indexlogo {
-        display: none;
-    }
-
-    .phonelogo {
-        display: block;
-    }
-
-    .logo {
-        margin: 0 auto;
-        width: 20%;
-    }
-
-    .logo img {
-
-        padding: 5px;
-        /* box-sizing: border-box;
-         background-color: #fff;
-         border-radius: 50%; */
-    }
-
     .hb {
         height: 40px;
-
     }
 
     nav {
         position: absolute;
         width: 80%;
         height: calc(100vh - 60px);
-        /* margin:  5% 0; */
         z-index: 1;
         background-color: #eee;
         top: 100%;
         left: 0;
         flex-direction: column;
-        /* display: none; */
         translate: 100% 0%;
         transition: 1s;
         opacity: 0;
     }
-
-
     .main nav a {
         font-size: 24px;
         padding: 20px 0;
@@ -207,12 +181,10 @@ img {
     }
 
     nav a:hover {
-
         color: #fff;
         background-color: #4E4B4B;
         transition: 1s;
         opacity: 0.5;
-
     }
 
     nav a+a {
@@ -249,8 +221,35 @@ img {
             rotate 1s 0s;
     }
 
-    .container {
-   
+    .title-photo {
+        font-size: unset;
+        margin: 30px 0;
     }
-
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+    .form-group,
+    .notice {
+        padding:10px 0;
+    }
+    .notice h2,
+    .notice label{
+        padding: 0 10px;
+    }
+    .form-acti{
+        width: 80%;
+        padding: 0;
+    }
+    .form-acti label{
+        text-align: start;
+    }
+    
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="date"],textarea {
+        width: 95%;
+    }
+  
 }
