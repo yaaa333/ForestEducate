@@ -466,15 +466,7 @@ textarea {
          overflow: hidden;
      }
  
-     header {
-         height: 60px;
-         display: flex;
-         justify-content: end;
-         align-items: center;
-         padding: 10px;
-         border-bottom:1px solid #84AA6D;
-         position: relative;
-     }
+
  
      .hb {
          height: 40px;
@@ -553,7 +545,7 @@ textarea {
          display: none;
      }
      .slider {
-        margin: 10px 30px;
+        margin: 85px 30px;
 
     }
 
